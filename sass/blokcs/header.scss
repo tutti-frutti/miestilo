@@ -1,0 +1,116 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1280px;
+    height: 115px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.header__logo {
+    margin-right: 60px;
+}
+
+.header__contacts {
+    margin-right: 55px;
+}
+
+.header__contacts-free-delivery,
+.header__contacts-hours {
+    font-size: 14px;
+    line-height: 22px;
+    color: #969696;
+}
+
+.header__contacts-phone {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.header__callback {
+    align-self: center;
+    position: relative;
+    margin-right: 175px;
+    padding: 15px 10px 15px 40px;
+    font-size: 14px;
+    border: 1px solid #acacac;
+    border-radius: 5px;
+}
+
+.header__callback::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 10px;
+    width: 19px;
+    height: 21px;
+    background: url("/img/icon-photo.png") no-repeat 50% 50%;
+}
+
+.header__user-nav {
+    display: flex;
+}
+
+div[class*="user-nav-"]:not(:last-child) {
+    margin-right: 35px;
+}
+
+div[class*="user-nav-"] {
+    padding-top: 40px;
+}
+
+div[class*="user-nav-"] p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #969696;
+    &:hover {
+        color: #8c3088;
+    }
+}
+
+.header__user-nav-reviews {
+    position: relative;
+}
+
+.header__user-nav-reviews::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 43px;
+    height: 32px;
+    background: url("/img/icon-user-nav1.png") no-repeat 50% 50%;
+}
+
+.header__user-nav-wishes {
+    position: relative;
+}
+
+.header__user-nav-wishes::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 37px;
+    height: 29px;
+    background: url("/img/icon-user-nav2.png") no-repeat 50% 50%;
+}
+
+.header__user-nav-basket {
+    position: relative;
+}
+
+.header__user-nav-basket::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 39px;
+    height: 25px;
+    background: url("/img/icon-user-nav3.png") no-repeat 50% 50%;
+}
