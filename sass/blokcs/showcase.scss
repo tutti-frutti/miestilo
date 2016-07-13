@@ -1,0 +1,115 @@
+.showcase {
+    height: 658px;
+    background: url("/img/showcase-bg.jpg") no-repeat 50% 0%;
+    background-size: cover;
+}
+
+.showcase__title {
+//width: 1200px;
+
+background: rgba(245, 245, 245, 0.6);
+}
+
+.showcase__title h1 {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 60px;
+    font-size: 35px;
+    line-height: 48px;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+.showcase__body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1215px;
+    margin: 0 auto;
+}
+
+.showcase__body-descr {
+    max-width: 450px;
+    padding: 30px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    background: #443451;
+}
+
+.showcase__body-descr-list li {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 14px;
+    list-style: none;
+}
+
+.showcase__body-descr-list li:not(:last-child)::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: -25px;
+    height: 12px;
+    width: 12px;
+    background: url("/img/icon-plus.png") no-repeat 50% 50%;
+}
+
+.showcase__body-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 390px;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+.showcase__body-form h3 {
+    font-size: 29px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.showcase__body-form h3 i {
+    text-transform: none;
+}
+
+.showcase__body-form--strikeout {
+    text-decoration: line-through;
+    font-weight: normal;
+}
+
+.showcase__body-form--fz {
+    font-size: 20px;
+}
+
+.showcase__body-form p {
+    position: relative;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.showcase__body-form p::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 417px;
+    height: 43px;
+//    background: url("/img/icon-form.png") no-repeat 50% 50%;
+    
+}
+
+.showcase__form-phone-number-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.showcase__form-phone-number-wrapper label {
+    width: 100%;
+}

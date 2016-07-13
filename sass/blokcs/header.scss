@@ -2,8 +2,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 1280px;
-    height: 115px;
+    max-width: 1200px;
+    min-height: 115px;
     margin: 0 auto;
 }
 
@@ -35,7 +35,7 @@ p {
 .header__callback {
     align-self: center;
     position: relative;
-    margin-right: 175px;
+    margin-right: 165px;
     padding: 15px 10px 15px 40px;
     font-size: 14px;
     border: 1px solid #acacac;
@@ -61,7 +61,8 @@ div[class*="user-nav-"]:not(:last-child) {
 }
 
 div[class*="user-nav-"] {
-    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 div[class*="user-nav-"] p {
@@ -73,43 +74,49 @@ div[class*="user-nav-"] p {
     }
 }
 
-.header__user-nav-reviews {
+.header__user-nav-block p.header__user-nav-numbers {
+    padding-left: 35px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.reviews {
     position: relative;
 }
 
-.header__user-nav-reviews::before {
+.reviews::before {
     position: absolute;
     content: "";
-    top: 0;
-    left: 0;
+    top: -5px;
+    left: -15px;
     width: 43px;
     height: 32px;
     background: url("/img/icon-user-nav1.png") no-repeat 50% 50%;
 }
 
-.header__user-nav-wishes {
+.wishes {
     position: relative;
 }
 
-.header__user-nav-wishes::before {
+.wishes::before {
     position: absolute;
     content: "";
-    top: 0;
-    left: 0;
+    top: -5px;
+    left: -10px;
     width: 37px;
     height: 29px;
     background: url("/img/icon-user-nav2.png") no-repeat 50% 50%;
 }
 
-.header__user-nav-basket {
+.basket {
     position: relative;
 }
 
-.header__user-nav-basket::before {
+.basket::before {
     position: absolute;
     content: "";
-    top: 0;
-    left: 0;
+    top: -5px;
+    left: -10px;
     width: 39px;
     height: 25px;
     background: url("/img/icon-user-nav3.png") no-repeat 50% 50%;

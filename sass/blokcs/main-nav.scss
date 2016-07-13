@@ -1,3 +1,79 @@
+.main-nav {
+    display: flex;
+    min-height: 48px;
+}
 .main-nav__item {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-nav__item li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav__item a {
+    padding: 17px;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+        color: #000;
+        background: #fff;
+    }
+}
+
+.main-nav__left--purple {
+    width: 48%;
+    background-color: #64168b;
+}
+
+.main-nav__right--black {
+    width: 60%;
+    background-color: #000000;
+}
+
+.main-nav__left--purple > .main-nav__item {
+    margin-left: auto;
+    max-width: 550px;
+}
+
+.main-nav__left--purple > .main-nav__item li:nth-child(1) a,
+.main-nav__left--purple > .main-nav__item li:nth-child(2) a {
+    padding: 14px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.main-nav__left--purple > .main-nav__item:last-child li {
+    margin-left: 5px;
+}
+
+.main-nav__left--purple > .main-nav__item li:nth-child(1) a {
+    margin-left: 50px;
+    margin-right: 75px;
+}
+
+.main-nav__left--purple > .main-nav__item li:nth-child(2) a {
+    margin-right: 20px;
+}
+
+.main-nav__right--black > .main-nav__item li:last-child {
+    position: relative;
+}
+
+.main-nav__right--black > .main-nav__item li:last-child::before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 26px;
+    top: 0;
+    left: 20px;
+    background: url("/img/icon-search.png") no-repeat 50% 50%;
 }

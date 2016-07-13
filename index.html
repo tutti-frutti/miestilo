@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
     <title>Library</title>
@@ -16,43 +15,54 @@
             </section>
             <section class="header__callback">Обратный звонок</section>
             <section class="header__user-nav">
-                <div class="header__user-nav-reviews">
+                <div class="header__user-nav-block reviews">
+                   <p class="header__user-nav-numbers">2</p>
                     <p>Мои обзоры</p>
                 </div>
-                <div class="header__user-nav-wishes">
+                <div class="header__user-nav-block wishes">
+                    <p class="header__user-nav-numbers">2</p>
                     <p>Мои пожелания</p>
                 </div>
-                <div class="header__user-nav-basket">
+                <div class="header__user-nav-block basket">
+                   <p class="header__user-nav-numbers">2</p>
                     <p>Корзина</p>
                 </div>
             </section>
         </header>
         
-        <div class="fluid-bg-top">
-            <nav class="main-nav container">
+        
+            <nav class="main-nav">
+               <section class="main-nav__left--purple">
                 <ul class="main-nav__item">
                     <li class="main-nav__items"><a href="#">Sale</a></li>
                     <li class="main-nav__items"><a href="#">New</a></li>
                     <li class="main-nav__items"><a href="#">Украшения</a></li>
                     <li class="main-nav__items"><a href="#">Аксессуары</a></li>
+                </ul>
+                </section>
+                
+                <section class="main-nav__right--black">
+                   <ul class="main-nav__item">
                     <li class="main-nav__items"><a href="#">На свадьбу</a></li>
                     <li class="main-nav__items"><a href="#">Часы</a></li>
                     <li class="main-nav__items"><a href="#">Для мужчин</a></li>
                     <li class="main-nav__items"><a href="#">Гид по подаркам</a></li>
                     <li class="main-nav__items"><a href="#">Мода обзоры</a></li>
+                    <li class="main-nav__items"><a href="#"></a></li>
                 </ul>
+                </section>
+                
             </nav>
-        </div>
         
-        <div class="fluid-bg">
-            <main class="container">
-                <article class="shop-presentation">
-                    <section class="shop-presentation__title">
+            <main class="">
+                <article class="showcase">
+                    <section class="showcase__title">
                         <h1>Ювелирная бижутерия оптом с кристалами Swarovski от успешной сети магазинов Miestilo</h1>
                     </section>
-                    <section class="shop-presentation__descr">
+                    <div class="showcase__body">
+                    <article class="showcase__body-descr">
                         <p>Невозможно оторваться от витрины, на которой выставлены украшения от Miestilo</p>
-                        <ul class="shop-presentation__list">
+                        <ul class="showcase__body-descr-list">
                             <li><strong>Серьги Swarovski</strong> нежнейшие и очаровательные</li>
                             <li><strong>Кольца мужские и женские</strong> с кристаллами Swarovski</li>
                             <li><strong>Броши</strong> с кристаллами разных форм</li>
@@ -60,14 +70,14 @@
                             <li><strong>Минимальная сумма заказа - 16 000 Р</strong>(с учетом оптовой скидки)</li>
                             <li>При заказе на сумму от 30 000 руб. доставка бесплатная</li>
                         </ul>
-                    </section>
-                    <section class="shop-presentation__form">
-                        <h3>Опт от 36 000 Р 16 000 Р</h3>
+                    </article>
+                    <article class="showcase__body-form">
+                        <h3>Опт <span class="showcase__body-form--fz">от</span> <span class="showcase__body-form--strikeout">36 000 Р</span> 16 000 Р</h3>
                         <p><strong>Акция!</strong> Сумма оптового заказа <strong>ниже на 65%</strong></p>
-                        <form action="#" class="shop-presentation__form-body">
+                        <form action="#" class="showcase__form-body">
                             <label for="fio">Введите Ваше имя</label>
                             <input type="text" name="fio" id="fio" placeholder="Иванов Иван Иванович">
-                            <div class="shop-presentation__form-phone-number-wrapper">
+                            <div class="showcase__form-phone-number-wrapper">
                             <label for="phone-number">Введите Ваш телефон</label>
                             <input type="tel" name="" id="phone-number">
                             <input type="tel" name="" id="phone-number">
@@ -77,10 +87,10 @@
                             <input type="email" placeholder="E-mail">
                             <input type="submit" value="Получить оптовые цены">
                         </form>
-                    </section>
+                    </article>
+                    </div>
                 </article>
             </main>
-        </div>
         
   </head>
   <body>
