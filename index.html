@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
     <title>Library</title>
-        <header class="container">
+  </head>
+        <header class="clearfix">
             <section class="header__logo"><img src="/img/logo-header.png" alt="Miestilo"></section>
             <section class="header__contacts">
                 <p class="header__contacts-free-delivery">Бесплатно по России</p>
@@ -31,8 +32,9 @@
         </header>
         
         
-            <nav class="main-nav">
-               <section class="main-nav__left--purple">
+            <nav class="main-nav clearfix">
+               <section class="main-nav__left">
+               <span class="circle"></span>
                 <ul class="main-nav__item">
                     <li class="main-nav__items"><a href="#">Sale</a></li>
                     <li class="main-nav__items"><a href="#">New</a></li>
@@ -41,7 +43,7 @@
                 </ul>
                 </section>
                 
-                <section class="main-nav__right--black">
+                <section class="main-nav__right">
                    <ul class="main-nav__item">
                     <li class="main-nav__items"><a href="#">На свадьбу</a></li>
                     <li class="main-nav__items"><a href="#">Часы</a></li>
@@ -51,7 +53,6 @@
                     <li class="main-nav__items"><a href="#"></a></li>
                 </ul>
                 </section>
-                
             </nav>
         
             <main class="">
@@ -59,6 +60,8 @@
                     <section class="showcase__title">
                         <h1>Ювелирная бижутерия оптом с кристалами Swarovski от успешной сети магазинов Miestilo</h1>
                     </section>
+                    
+                    
                     <div class="showcase__body">
                     <article class="showcase__body-descr">
                         <p>Невозможно оторваться от витрины, на которой выставлены украшения от Miestilo</p>
@@ -71,28 +74,30 @@
                             <li>При заказе на сумму от 30 000 руб. доставка бесплатная</li>
                         </ul>
                     </article>
-                    <article class="showcase__body-form">
+                    
+                    
+                    <article class="showcase__body-form clearfix">
                         <h3>Опт <span class="showcase__body-form--fz">от</span> <span class="showcase__body-form--strikeout">36 000 Р</span> 16 000 Р</h3>
                         <p><strong>Акция!</strong> Сумма оптового заказа <strong>ниже на 65%</strong></p>
                         <form action="#" class="showcase__form-body">
                             <label for="fio">Введите Ваше имя</label>
-                            <input type="text" name="fio" id="fio" placeholder="Иванов Иван Иванович">
-                            <div class="showcase__form-phone-number-wrapper">
-                            <label for="phone-number">Введите Ваш телефон</label>
-                            <input type="tel" name="" id="phone-number">
-                            <input type="tel" name="" id="phone-number">
-                            <input type="tel" name="" id="phone-number">
-                            </div>
+                            <input type="text" name="fio" id="fio" placeholder="Иванов Иван Иванович"><br>
+                            <label for="phone-number">Введите Ваш телефон</label><br>
+                            <input type="tel" name="" id="phone-number-1" placeholder="+7">
+                            <input type="tel" name="" id="phone-number-2" placeholder="123">
+                            <input type="tel" name="" id="phone-number-3" placeholder="4567890">
                             <input type="text" name="" id="city" placeholder="Ваш город">
                             <input type="email" placeholder="E-mail">
+                            <div class="showcase__form-body--center">
                             <input type="submit" value="Получить оптовые цены">
+                            </div>
                         </form>
                     </article>
                     </div>
                 </article>
             </main>
         
-  </head>
+  
   <body>
   </body>
 </html>

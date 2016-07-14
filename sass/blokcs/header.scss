@@ -1,10 +1,45 @@
 header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    width: 100%;
+    min-height: 115px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.header__contacts p {
+    margin: 0;
+}
+
+.header__contacts-free-delivery,
+.header__contacts-hours {
+    font-size: 14px;
+    line-height: 22px;
+    color: #969696;
+}
+
+.header__contacts-phone {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+
+
+@media #{$tablet} {
+    
+}
+
+@media #{$desktop} {
+    
+
+header {
     max-width: 1200px;
     min-height: 115px;
     margin: 0 auto;
+    line-height: 115px;
 }
 
 p {
@@ -13,11 +48,17 @@ p {
 }
 
 .header__logo {
+    display: inline-block;
     margin-right: 60px;
+    line-height: normal;
+    vertical-align: middle;
 }
 
 .header__contacts {
+    display: inline-block;
     margin-right: 55px;
+    line-height: normal;
+    vertical-align: middle;
 }
 
 .header__contacts-free-delivery,
@@ -33,10 +74,12 @@ p {
 }
 
 .header__callback {
-    align-self: center;
     position: relative;
-    margin-right: 165px;
+    display: inline-block;
+    margin-right: 145px;
     padding: 15px 10px 15px 40px;
+    line-height: normal;
+    vertical-align: middle;
     font-size: 14px;
     border: 1px solid #acacac;
     border-radius: 5px;
@@ -52,8 +95,12 @@ p {
     background: url("/img/icon-photo.png") no-repeat 50% 50%;
 }
 
+//USER-NAV
+
 .header__user-nav {
-    display: flex;
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
 }
 
 div[class*="user-nav-"]:not(:last-child) {
@@ -61,8 +108,7 @@ div[class*="user-nav-"]:not(:last-child) {
 }
 
 div[class*="user-nav-"] {
-    display: flex;
-    flex-direction: column;
+    float: left;
 }
 
 div[class*="user-nav-"] p {
@@ -121,3 +167,4 @@ div[class*="user-nav-"] p {
     height: 25px;
     background: url("/img/icon-user-nav3.png") no-repeat 50% 50%;
 }
+    }
