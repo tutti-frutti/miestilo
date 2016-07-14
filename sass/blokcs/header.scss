@@ -1,12 +1,16 @@
 header {
     width: 100%;
     min-height: 115px;
-    margin: 0 auto;
+    text-align: center;
 }
 
 .header__logo {
     display: block;
-    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.header__contacts {
+    margin-bottom: 20px;
 }
 
 .header__contacts p {
@@ -25,7 +29,24 @@ header {
     font-weight: 600;
 }
 
+.header__callback {
+    position: relative;
+    display: inline-block;
+    padding: 15px 10px 15px 40px;
+    font-size: 14px;
+    border: 1px solid #acacac;
+    border-radius: 5px;
+}
 
+.header__callback::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 10px;
+    width: 19px;
+    height: 21px;
+    background: url("/img/icon-photo.png") no-repeat 50% 50%;
+}
 
 
 @media #{$tablet} {
