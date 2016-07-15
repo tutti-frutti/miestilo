@@ -7,43 +7,50 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
     <title>Library</title>
   </head>
-        <header class="clearfix">
-            <section class="header__logo"><img src="/img/logo-header.png" alt="Miestilo"></section>
-            <section class="header__contacts">
-                <p class="header__contacts-free-delivery">Бесплатно по России</p>
-                <p class="header__contacts-phone">8 800 500-70-61</p>
-                <p class="header__contacts-hours">с 10:00 до 21:00 по Москве</p>
-            </section>
-            <section class="header__callback">Обратный звонок</section>
-            <section class="header__user-nav">
-                <div class="header__user-nav-block reviews">
-                   <p class="header__user-nav-numbers">2</p>
-                    <p>Мои обзоры</p>
-                </div>
-                <div class="header__user-nav-block wishes">
-                    <p class="header__user-nav-numbers">2</p>
-                    <p>Мои пожелания</p>
-                </div>
-                <div class="header__user-nav-block basket">
-                   <p class="header__user-nav-numbers">2</p>
-                    <p>Корзина</p>
-                </div>
-            </section>
+  
+  <header class="header clearfix">
+            
+            
+            <a href="#" class="header__logo"><img src="/img/logo-header.png" alt="Miestilo"></a>
+            
+            <ul class="header__contacts">
+                <li class="header__contacts-delivery">Бесплатно по России</li>
+                <li class="header__contacts-phone"><a href="tel:8 800 500-70-61">8 800 500-70-61</a></li>
+                <li class="header__contacts-hours">с 10:00 до 21:00 по Москве</li>
+            </ul>
+            
+            
+            <div class="header__callback"><a href="#">Обратный звонок</a></div>
+            
+            
+            <ul class="header__user-nav">
+                <li class="header__user-nav-block reviews">
+                    <span class="header__user-nav-number">2</span>
+                    <div class="header__user-nav-title"><a href="#">Мои обзоры</a></div>
+                </li>
+                <li class="header__user-nav-block wishes">
+                    <span class="header__user-nav-number">5</span>
+                    <div class="header__user-nav-title"><a href="#">Мои пожелания</a></div>
+                </li>
+                <li class="header__user-nav-block basket">
+                    <span class="header__user-nav-number">3</span>
+                    <div class="header__user-nav-title"><a href="#">Корзина</a></div>
+                </li>
+            </ul>
         </header>
         
         
             <nav class="main-nav clearfix">
-               <section class="main-nav__left">
-               <span class="circle"></span>
+               <div class="main-nav__left">
                 <ul class="main-nav__item">
-                    <li class="main-nav__items"><a href="#">Sale</a></li>
+                    <li class="main-nav__items main-nav__items--circle"><a class="main-nav__items--size" href="#">Sale</a></li>
                     <li class="main-nav__items"><a href="#">New</a></li>
                     <li class="main-nav__items"><a href="#">Украшения</a></li>
                     <li class="main-nav__items"><a href="#">Аксессуары</a></li>
                 </ul>
-                </section>
+                </div>
                 
-                <section class="main-nav__right">
+                <div class="main-nav__right">
                    <ul class="main-nav__item">
                     <li class="main-nav__items"><a href="#">На свадьбу</a></li>
                     <li class="main-nav__items"><a href="#">Часы</a></li>
@@ -52,7 +59,7 @@
                     <li class="main-nav__items"><a href="#">Мода обзоры</a></li>
                     <li class="main-nav__items"><a href="#"></a></li>
                 </ul>
-                </section>
+                </div>
             </nav>
         
             <main class="">

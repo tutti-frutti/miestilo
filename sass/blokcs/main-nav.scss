@@ -1,63 +1,77 @@
 .main-nav {
     position: relative;
     min-height: 48px;
-}
-.main-nav__item {
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.main-nav__item li {
-    display: inline-block;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.main-nav__item a {
-    padding: 17px;
-    font-size: 14px;
-    line-height: 22px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    &:hover {
-        color: #000;
-        background: #fff;
-    }
-}
-
-.circle {
-    position:absolute;
-    top: 20px;
-    left: 327px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #8a29bb;
-}
-
-.main-nav__left {
+    
+    &__left {
     float: left;
     width: 45%;
     background-color: #64168b;
-}
-
-.main-nav__right {
+        
+    }
+    
+    &__item {
+        margin-left: auto;
+        max-width: 550px;
+    }
+    
+    &__right {
     float: right;
     width: 55%;
     background-color: #000000;
+    }
+    
+    
+    
+    &__items {
+    padding: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+        
+        & a {
+            padding: 17px;
+            font-size: 14px;
+            line-height: 22px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+            
+            &:hover {
+                color: #000;
+                background: #fff;
+    }
+        }
+        
+        &--circle {
+            position:relative;
+            
+            &::before {
+            position:absolute;
+            content: "";
+            top: 5px;
+            left: 127px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #8a29bb;    
+        }
+     }
+        
+        &--size {
+            font-size: 18px;
+        }
+        
+  }
+    
 }
 
-.main-nav__left > .main-nav__item {
-    margin-left: auto;
-    max-width: 550px;
-}
 
 .main-nav__left > .main-nav__item li:nth-child(1) a,
 .main-nav__left > .main-nav__item li:nth-child(2) a {
     padding: 14px;
-    font-size: 18px;
+    
     line-height: 21px;
 }
 
