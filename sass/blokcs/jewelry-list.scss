@@ -1,0 +1,58 @@
+.jewelry-list {
+    max-width: 1215px;
+    margin: 0 auto;
+    
+    &__body {
+        float: left;
+        margin-top: 195px;
+        max-width: 450px;
+        padding: 25px 20px 30px 13px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        box-sizing: border-box;
+        color: #fff;
+        background: #443451;
+    }
+    
+    &__title {
+        margin-left: 15px;
+        font-size: 18px;
+        line-height: 24px;
+        
+        &--bold {
+            margin-left: 0;
+            font-weight: bold;
+        }
+    }
+    
+    &__item {
+        position: relative;
+        margin-bottom: 16px;
+        font-size: 14px;
+        color: #9177a7;
+        list-style: none;
+        
+        &--bold {
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        &--white {
+            color: #fff;
+        }
+        
+        &--bolder {
+            font-weight: 600;
+        }
+    }
+    
+    &__item:not(:last-child)::before {
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: -25px;
+        height: 12px;
+        width: 12px;
+        background: url("/img/icon-plus.png") no-repeat 50% 50%;
+    }
+}
