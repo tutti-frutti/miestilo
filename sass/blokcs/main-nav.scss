@@ -6,12 +6,6 @@
     float: left;
     width: 45%;
     background-color: #64168b;
-        
-    }
-    
-    &__item {
-        margin-left: auto;
-        max-width: 550px;
     }
     
     &__right {
@@ -20,29 +14,57 @@
     background-color: #000000;
     }
     
+    &__items-left {
+        margin-left: auto;
+        max-width: 550px;
+        text-align: right;
+    }
+    
+    &__items-right {
+        padding: 0;
+        text-align: left;
+    }
     
     
-    &__items {
-    padding: 0;
-    box-sizing: border-box;
-    display: inline-block;
-    list-style: none;
-    margin: 0;
-    padding: 0;    
-        
-        & a {
+    &__link {
             padding: 17px;
             font-size: 14px;
-            line-height: 22px;
+            line-height: 21px;
             text-transform: uppercase;
             text-decoration: none;
             color: #fff;
-            
-            &:hover {
+        
+        &:hover {
                 color: #000;
                 background: #fff;
     }
+        
+        &--bold {
+            font-size: 18px;
         }
+        
+        &--icon-search {
+            position: relative;
+        }
+        
+        &--icon-search::before {
+            position: absolute;
+            content: "";
+            width: 22px;
+            height: 26px;
+            top: 13px;
+            left: 0;
+            background: url("/img/icon-search.png") no-repeat 50% 50%;
+            }
+    }
+    
+    &__item {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: inline-block;
+        list-style: none;
+        
         
         &--circle {
             position:relative;
@@ -51,56 +73,42 @@
             position:absolute;
             content: "";
             top: 5px;
-            left: 127px;
+            left: 100px;
             width: 10px;
             height: 10px;
             border-radius: 50%;
             background-color: #8a29bb;    
         }
      }
-        
-        &--size {
-            font-size: 18px;
+        //блок модификаторов для задания отступов в меню в левой     части
+        &--margin-1 {
+            margin-right: 70px;
         }
         
+        &--margin-2 {
+            margin-right: 70px;
+        }
   }
     
 }
 
 
-.main-nav__left > .main-nav__item li:nth-child(1) a,
-.main-nav__left > .main-nav__item li:nth-child(2) a {
-    padding: 14px;
-    
-    line-height: 21px;
-}
+//.main-nav__left > .main-nav__item li:nth-child(1) a,
+//.main-nav__left > .main-nav__item li:nth-child(2) a {
+//    padding: 14px;
+//    
+//    line-height: 21px;
+//}
 
-.main-nav__left > .main-nav__item:last-child li {
-    margin-left: 5px;
-}
-
-.main-nav__left > .main-nav__item li:nth-child(1) a {
-    margin-left: 28px;
-    margin-right: 65px;
-}
-
-.main-nav__left > .main-nav__item li:nth-child(2) a {
-    margin-right: 20px;
-}
-
-.main-nav__right > .main-nav__item li:last-child {
-    position: relative;
-}
-
-.main-nav__right > .main-nav__item li:last-child::before {
-    position: absolute;
-    content: "";
-    width: 22px;
-    height: 26px;
-    top: 0;
-    left: 10px;
-    background: url("/img/icon-search.png") no-repeat 50% 50%;
-    &:hover {
-        opacity: .6
-    }
-}
+//.main-nav__left > .main-nav__item:last-child li {
+//    margin-left: 5px;
+//}
+//
+//.main-nav__left > .main-nav__item li:nth-child(1) a {
+//    margin-left: 28px;
+//    margin-right: 65px;
+//}
+//
+//.main-nav__left > .main-nav__item li:nth-child(2) a {
+//    margin-right: 20px;
+//}

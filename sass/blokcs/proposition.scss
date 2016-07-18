@@ -1,0 +1,14 @@
+.proposition {
+    background: rgba(245, 245, 245, 0.6);
+    
+    &__title {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 60px;
+        font-size: 35px;
+        line-height: 48px;
+        font-weight: normal;
+        box-sizing: border-box;
+    }
+}
