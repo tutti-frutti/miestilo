@@ -1,0 +1,32 @@
+.bestsellers {
+    padding-top: 30px;
+    background: #edece9;
+
+    &__wrapper {
+        position: relative;
+        max-width: 1200px;
+        min-height: 450px;
+        margin: 0 auto;
+    }
+    
+    &__img {
+        float: left;
+    }
+    &__descr {
+        float: right;
+        width: 50%;
+        margin-top: 75px;
+        
+    }
+    
+    &__text {
+        
+        padding: 25px;
+        font-size: 30px;
+        line-height: 48px;
+            
+            &--bold {
+                font-weight: bold;
+                }
+    }
+}

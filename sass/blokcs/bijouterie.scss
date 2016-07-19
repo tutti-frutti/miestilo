@@ -1,0 +1,44 @@
+.bijouterie {
+    background: #edece9;
+    
+    &__wrapper {
+        position: relative;
+        max-width: 1200px;
+        min-height: 450px;
+        margin: 0 auto;
+    }
+    
+    &__img {
+        float: right;
+        margin-top: 80px;
+    }
+    
+    &__descr {
+        float: left;
+        max-width: 685px;
+        margin-top: 120px;
+        
+    }
+    
+    &__text {
+        position: relative;
+        font-size: 35px;
+        
+        &--line {
+            &::before {
+            position: absolute;
+            content: "";
+            bottom: -35px;
+            left: 0;
+            width: 98px;
+            height: 3px;
+            background: url("/img/icon-title-line-color.png") no-repeat 50% 50%;
+        }
+      }
+    }
+    
+    &__sub-text {
+        margin-top: 80px;
+        font-size: 22px;
+    }
+}

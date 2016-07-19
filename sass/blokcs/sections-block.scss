@@ -1,0 +1,113 @@
+.sections-block {
+    max-width: 1200px;
+    margin: 0 auto;
+//    margin-bottom: 130px;
+    text-align: center;
+    
+    &__title {
+        position: relative;
+        padding: 85px 0 70px 0;
+        margin: 0;
+        font-size: 35px;
+        line-height: 32px;
+        font-weight: normal;
+        text-align: center;
+        color: #2c2c2c;
+        
+        &--bold {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        &--decor-line {
+                 position: relative;
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        margin-left: -46px;
+                        width: 91px;
+                        height: 3px;
+                        bottom: 30px;
+                        left: 50%;
+                        background: url("/img/icon-title-line-gray.png") no-repeat 50% 50%;
+            }
+        }
+    }
+    
+    &__sub-title {
+        padding: 0 300px;
+        font-size: 18px;
+        
+        
+    }
+}
+    
+    //БЛОК ДЛЯ СПИСКА
+    
+    .sections-list {
+        
+        &__items {
+            display: inline-block;
+            padding-top: 125px;
+            margin-right: 140px;
+            width: 200px;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 300;
+            list-style: none;
+        
+        &--circle {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100px;
+                height: 100px;
+                top: 0;
+                left: 50px;
+                border: 2px solid #edece9;
+                border-radius: 100%;
+            }
+        }
+        
+           
+        &--basket {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100px;
+                height: 100px;
+                top: 0;
+                left: 50px;
+                background: url("/img/icon-earn-1.png") no-repeat 50% 50%;
+            }
+        }
+        &--wallet {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100px;
+                height: 100px;
+                top: 0;
+                left: 50px;
+                background: url("/img/icon-earn-2.png") no-repeat 50% 50%;
+            }
+        }
+            
+        &--certificate {
+            position: relative;
+            margin-right: 0;
+                &::before {
+                position: absolute;
+                content: "";
+                width: 100px;
+                height: 100px;
+                top: 0;
+                left: 50px;
+                background: url("/img/icon-earn-3.png") no-repeat 50% 50%;
+            }
+        }
+    }
+  }
