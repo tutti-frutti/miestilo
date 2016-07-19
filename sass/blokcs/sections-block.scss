@@ -72,7 +72,7 @@
         
            
         &--basket {
-            position: relative;
+//            position: relative;
             &::before {
                 position: absolute;
                 content: "";
@@ -84,7 +84,7 @@
             }
         }
         &--wallet {
-            position: relative;
+//            position: relative;
             &::before {
                 position: absolute;
                 content: "";
@@ -97,7 +97,7 @@
         }
             
         &--certificate {
-            position: relative;
+//            position: relative;    
             margin-right: 0;
                 &::before {
                 position: absolute;
