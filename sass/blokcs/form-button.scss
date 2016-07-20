@@ -1,9 +1,12 @@
 .form-button {
     margin: 0 auto;
+    
     text-align: center;
     
     &__btn-input {
         padding: 15px 45px;
+        width: 275px;
+        height: 55px;
         border: none;
         border-radius: 30px;
         cursor: pointer;

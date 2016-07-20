@@ -19,6 +19,11 @@
             text-transform: uppercase;
         }
         
+        &--bold2 {
+            font-weight: bold;
+            text-transform: none
+        }
+        
         &--decor-line {
                  position: relative;
                     &::before {
@@ -30,6 +35,20 @@
                         bottom: 30px;
                         left: 50%;
                         background: url("/img/icon-title-line-gray.png") no-repeat 50% 50%;
+            }
+        }
+        
+        &--color-line {
+                position: relative;
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        margin-left: -46px;
+                        width: 91px;
+                        height: 3px;
+                        bottom: 30px;
+                        left: 50%;
+                        background: url("/img/icon-title-line-color2.png") no-repeat 50% 50%;
             }
         }
     }
@@ -111,3 +130,13 @@
         }
     }
   }
+
+.sub-title {
+	font-size: 24px;
+    line-height: 48px;
+    font-weight: 100;
+    text-align: center;
+    color: #2c2c2c;
+}
+
+

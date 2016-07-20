@@ -1,0 +1,29 @@
+.company-offer {
+    background: #300347;
+    
+    
+    &__wrapper {
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+    
+    &__descr {
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #fff;
+        
+        &--paddingt {
+            padding: 30px 0;
+        }
+        
+        &--paddingb {
+            padding-bottom: 30px;
+        }
+        
+        &--big {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}

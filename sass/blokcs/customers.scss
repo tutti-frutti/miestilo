@@ -1,0 +1,111 @@
+.customers {
+    width: 1100px;
+    margin: 0 auto;
+    
+    &__items {
+        position: relative;
+        display: inline-block;
+        list-style: none;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 100;
+        color: #6b6b6b;
+        
+        &--custom-size-1 {
+            padding-left: 60px;
+            padding-top: 10px;
+            max-width: 680px;
+            vertical-align: top;
+            
+            &::before {
+                position: absolute;
+                content: "";
+                top: 95px;
+                left: 0;
+                width: 52px;
+                height: 37px;
+                background: url("/img/cite-1.png") no-repeat 50% 50%;
+                
+            }
+            
+            &::after {
+                position: absolute;
+                content: "";
+                top: -13px;
+                right: -60px;
+                width: 52px;
+                height: 37px;
+                background: url("/img/cite-2.png") no-repeat 50% 50%;
+            }
+        }
+        
+        &--custom-size-2 {
+            padding-right: 90px;
+            padding-left: 105px;
+            padding-top: 25px;
+            max-width: 680px;
+            vertical-align: top;
+            
+            &::before {
+                position: absolute;
+                content: "";
+                top: 109px;
+                left: 47px;
+                width: 52px;
+                height: 37px;
+                background: url("/img/cite-1.png") no-repeat 50% 50%;
+                
+            }
+            
+            &::after {
+                position: absolute;
+                content: "";
+                top: 2px;
+                right: 16px;
+                width: 52px;
+                height: 37px;
+                background: url("/img/cite-2.png") no-repeat 50% 50%;
+            }
+        }
+        
+        &--custom-size-3 {
+            padding-right: 70px;
+            padding-left: 105px;
+            padding-top: 25px;
+            max-width: 680px;
+            vertical-align: top;
+            
+            &::before {
+                position: absolute;
+                content: "";
+                top: 110px;
+                left: 40px;
+                width: 52px;
+                height: 37px;
+                background: url("/img/cite-1.png") no-repeat 50% 50%;
+                
+            }
+            
+            &::after {
+                position: absolute;
+                content: "";
+                top: 2px;
+                right: 16px;
+                width: 52px;
+                height: 37px;
+                background: url("/img/cite-2.png") no-repeat 50% 50%;
+            }
+        }
+    }
+    
+    &__name {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        text-align: right;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: bold;
+        color: #000;
+    }
+}

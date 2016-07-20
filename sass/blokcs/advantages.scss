@@ -1,11 +1,18 @@
 .advantages {
     max-width: 940px;
     margin: 0 auto;
+    margin-bottom: 105px;
     text-align: center;
+    
+    &__list {
+        padding: 0;
+        margin: 0;
+    }
     
     &__items {
         display: inline-block;
         width: 204px;
+        vertical-align: middle; // способ подходит для списков
         font-size: 15px;
         list-style: none;
     }

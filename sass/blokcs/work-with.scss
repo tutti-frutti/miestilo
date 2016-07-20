@@ -1,0 +1,93 @@
+.work-with {
+    margin-top: 90px;
+    background: #f6f7f6;
+    
+    &__list {
+        padding: 0;
+        padding-bottom: 60px;
+        width: 715px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    &__items {
+        position: relative;
+        display: inline-block;
+        padding-top: 90px;
+        margin-right: 70px;
+        margin-bottom: 45px;
+        max-width: 165px;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600;
+        list-style: none;
+        vertical-align: top;
+        
+        &--handbag {
+            &::before {
+                position: absolute;
+                content: "";
+                top: 15px;
+                left: 50%;
+                margin-left: -25px;
+                width: 50px;
+                height: 50px;
+                background: url("/img/work-with-1.png") no-repeat 50% 50%;
+            }
+        }
+        
+        &--suitcase {
+            &::before {
+                position: absolute;
+                content: "";
+                top: 15px;
+                left: 50%;
+                margin-left: -25px;
+                width: 50px;
+                height: 50px;
+                background: url("/img/work-with-2.png") no-repeat 50% 50%;
+            }
+        }
+        
+        &--screen {
+                margin-right: 0;
+            &::before {
+                position: absolute;
+                content: "";
+                top: 15px;
+                left: 50%;
+                margin-left: -25px;
+                width: 50px;
+                height: 50px;
+                background: url("/img/work-with-3.png") no-repeat 50% 50%;
+            }
+        }
+        
+        &--star {
+            &::before {
+                position: absolute;
+                content: "";
+                top: 15px;
+                left: 50%;
+                margin-left: -25px;
+                width: 50px;
+                height: 50px;
+                background: url("/img/work-with-4.png") no-repeat 50% 50%;
+            }
+        }
+        
+        &--entepr {
+                margin-right: 0;
+            &::before {
+                position: absolute;
+                content: "";
+                top: 15px;
+                left: 50%;
+                margin-left: -25px;
+                width: 50px;
+                height: 50px;
+                background: url("/img/work-with-5.png") no-repeat 50% 50%;
+            }
+        }
+    }
+}
