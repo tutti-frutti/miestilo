@@ -19,8 +19,14 @@
         background: #fff;
         box-sizing: border-box;
         
-        &:last-child{
+        &--margin-zero{
             margin-right: 0;
+        }
+        
+        @media #{$desktop} {
+            float: none;
+            margin: 0 auto;
+            margin-bottom: 20px;
         }
     }
     

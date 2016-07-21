@@ -11,11 +11,24 @@
     
     &__img {
         float: left;
+        
+        @media (max-width: 1000px) {
+            float: none;
+            text-align: center;
+        }
     }
+    
     &__descr {
         float: right;
         width: 50%;
         margin-top: 75px;
+        
+        @media (max-width: 1000px) {
+            float: none;
+            width: auto;
+            margin-top: 0;
+            text-align: center;
+        }
         
     }
     

@@ -1,7 +1,7 @@
 .diploma {
     min-height: 532px;
     background: url("/img/diploma-bg.jpg") no-repeat 50% 50%;
-//    background-size: cover;
+    background-size: cover;
     
     &__title {
         padding-top: 50px;
@@ -16,5 +16,9 @@
         display: inline-block;
         margin-right: 20px;
         list-style: none;
+        
+        @media #{$desktop} {
+            margin-bottom: 20px;
+        }
     }
 }

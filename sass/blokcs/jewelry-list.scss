@@ -12,6 +12,13 @@
         box-sizing: border-box;
         color: #fff;
         background: #443451;
+        
+        @media (max-width: 1000px) {
+            
+            float: none;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        } 
     }
     
     &__body-bottom {
@@ -70,3 +77,4 @@
         list-style: none;
     }
 }
+

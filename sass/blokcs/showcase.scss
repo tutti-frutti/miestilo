@@ -1,11 +1,17 @@
 //FORM WRAPPER
-
 .form-wrapper {
     float: right;
     max-width: 388px;
     padding: 45px 20px 30px 20px;
     box-sizing: border-box;
     background: #fff;
+    
+    @media (max-width: 1000px) {
+            
+            float: none;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        } 
     
     &__title {
         margin: 0;

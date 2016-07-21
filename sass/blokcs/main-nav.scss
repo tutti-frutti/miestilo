@@ -43,19 +43,25 @@
             font-size: 18px;
         }
         
-        &--icon-search {
-            position: relative;
+        &--icon {
+            &-search {
+                position: relative;
+                
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 22px;
+                    height: 26px;
+                    top: 13px;
+                    left: 0;
+                    background: url("/img/icon-search.png") no-repeat 50% 50%;
+                }
+        
+            }
+        
         }
         
-        &--icon-search::before {
-            position: absolute;
-            content: "";
-            width: 22px;
-            height: 26px;
-            top: 13px;
-            left: 0;
-            background: url("/img/icon-search.png") no-repeat 50% 50%;
-            }
+        
     }
     
     &__item {

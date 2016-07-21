@@ -14,8 +14,14 @@
         font-size: 14px;
         line-height: 18px;
         list-style: none;
-        &:last-child {
-            margin-right: 0;
+                
+        @media (max-width: 1140px) {
+            width: 130px;
+            margin: 50px;
+            
+            &--margin-zero {
+                margin-right: 50px;
+            }
         }
         
         &--bag {
@@ -55,6 +61,8 @@
         }
         
         &--man {
+            margin-right: 0;
+            
             &::before {
                 position: absolute;
                 content: "";

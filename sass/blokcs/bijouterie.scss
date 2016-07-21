@@ -11,12 +11,25 @@
     &__img {
         float: right;
         margin-top: 80px;
+        
+        @media (max-width: 1050px) {
+            float: none;
+            text-align: center;
+        }
     }
     
     &__descr {
         float: left;
         max-width: 685px;
         margin-top: 120px;
+        
+        @media (max-width: 1050px) {
+            float: none;
+            margin: 0 auto;
+            margin-top: 100px;
+            padding-top: 80px;
+            text-align: center;
+        }
         
     }
     
@@ -33,6 +46,11 @@
             width: 98px;
             height: 3px;
             background: url("/img/icon-title-line-color.png") no-repeat 50% 50%;
+                
+                @media (max-width: 1050px) {
+                    left: 50%;
+                    margin-left: -49px;
+        }
         }
       }
     }

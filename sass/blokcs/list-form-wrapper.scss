@@ -1,10 +1,10 @@
 .list-form-wrapper {
-    height: 658px;
+    min-height: 658px;
     background: url("/img/showcase-bg.jpg") no-repeat 50% 0%;
     background-size: cover;
     
     &--bottom {
-        height: 576px;
+        min-height: 576px;
     }
 }
 
