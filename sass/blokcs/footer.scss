@@ -1,0 +1,32 @@
+.footer {
+    background: #2c2c2c;
+    
+    &__wrapper {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.about {
+    
+    &__list {
+        padding: 0;
+        margin: 0;
+    }
+    
+    &__items {
+        font-size: 14px;
+        line-height: 30px;
+        list-style: none;
+        
+        &--marginb {
+            padding-bottom: 20px;
+            text-transform: uppercase; 
+        }
+    }
+    
+    &__links {
+        color: #fff;
+        text-decoration: none;
+    }
+}
