@@ -16,7 +16,7 @@
         padding-top: 90px;
         margin-right: 70px;
         margin-bottom: 45px;
-        max-width: 165px;
+        width: 165px;
         font-size: 14px;
         line-height: 18px;
         font-weight: 600;
@@ -89,5 +89,9 @@
                 background: url("/img/work-with-5.png") no-repeat 50% 50%;
             }
         }
+        
+        @media #{$desktop} {
+            margin: 20px;
+    }
     }
 }

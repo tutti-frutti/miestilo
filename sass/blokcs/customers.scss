@@ -11,11 +11,18 @@
         font-weight: 100;
         color: #6b6b6b;
         
+//        &--positioning {
+//            position: absolute;
+//            top: 0;
+//            left: 0;
+//        }
+        
         &--custom-size-1 {
             padding-left: 60px;
             padding-top: 10px;
             max-width: 680px;
             vertical-align: top;
+            
             
             &::before {
                 position: absolute;
@@ -37,7 +44,11 @@
                 height: 37px;
                 background: url("/img/cite-2.png") no-repeat 50% 50%;
             }
+            
+            @media #{$desktop} {
+                padding-left: 0;
         }
+    }
         
         &--custom-size-2 {
             padding-right: 90px;
@@ -66,6 +77,12 @@
                 height: 37px;
                 background: url("/img/cite-2.png") no-repeat 50% 50%;
             }
+            
+            @media #{$desktop} {
+                padding-left: 0;
+                padding-right: 0;
+        }
+            
         }
         
         &--custom-size-3 {
@@ -95,6 +112,11 @@
                 height: 37px;
                 background: url("/img/cite-2.png") no-repeat 50% 50%;
             }
+            
+            @media #{$desktop} {
+                padding-left: 0;
+                padding-right: 0;
+        }
         }
     }
     

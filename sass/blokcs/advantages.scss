@@ -11,9 +11,29 @@
     
     &__items {
         display: inline-block;
-        width: 204px;
+        width: 417px;
         vertical-align: middle; // способ подходит для списков
         font-size: 15px;
         list-style: none;
+        color: #2c2c2c;
+    }
+    
+    &__img {
+        float: left;
+        
+        @media #{$desktop} {
+            float: none;
+    }
+    }
+    
+    &__descr {
+        float: left;
+        width: 50%;
+        
+        
+        @media #{$desktop} {
+            float: none;
+            margin: 20px auto;
+}
     }
 }

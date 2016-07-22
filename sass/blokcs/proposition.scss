@@ -10,5 +10,9 @@
         line-height: 48px;
         font-weight: normal;
         box-sizing: border-box;
+        
+        @media #{$desktop} {
+            font-size: 25px;
+        }
     }
 }

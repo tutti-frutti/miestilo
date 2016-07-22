@@ -12,6 +12,10 @@
     &__img {
         float: left;
         
+        & > img {
+            width: 100%;
+        }
+        
         @media (max-width: 1000px) {
             float: none;
             text-align: center;
@@ -33,13 +37,16 @@
     }
     
     &__text {
-        
         padding: 25px;
         font-size: 30px;
         line-height: 48px;
-            
+        
             &--bold {
                 font-weight: bold;
-                }
+        }
+        
+        @media #{$desktop} {
+            font-size: 25px;
+        }
     }
 }

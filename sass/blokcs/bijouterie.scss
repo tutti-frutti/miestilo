@@ -37,6 +37,10 @@
         position: relative;
         font-size: 35px;
         
+        @media #{$desktop} {
+            font-size: 25px;
+    }
+        
         &--line {
             &::before {
             position: absolute;
@@ -47,13 +51,13 @@
             height: 3px;
             background: url("/img/icon-title-line-color.png") no-repeat 50% 50%;
                 
-                @media (max-width: 1050px) {
-                    left: 50%;
-                    margin-left: -49px;
+            @media #{$desktop} {
+                left: 50%;
+                margin-left: -49px;
+            }
         }
-        }
-      }
     }
+}
     
     &__sub-text {
         margin-top: 80px;

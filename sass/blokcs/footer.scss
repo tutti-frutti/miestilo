@@ -57,8 +57,13 @@
                 margin-top: 30px;
                 padding-bottom: 20px;
                 text-transform: uppercase;
-            }
+                
+                @media #{$desktop} {
+                margin-top: 0;
+                padding-top: 20px;
         }
+    }
+}
         
         &--padding-fz {
             padding-top: 30px;
