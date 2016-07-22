@@ -2,6 +2,10 @@
     max-width: 1100px;
     margin: 0 auto;
     
+    &__top-title {
+        padding-top: 63px;
+    }
+    
     &__items {
         position: relative;
         display: inline-block;
@@ -10,12 +14,33 @@
         line-height: 21px;
         font-weight: 100;
         color: #6b6b6b;
+    }
+    
+    &__descr {
+        display: table;
+        height: 133px;
+    }
+    
+    &__text {
+        display: table-cell;
+        max-width: 680px;
+        padding-left: 60px;
+        padding-right: 60px;
+        vertical-align: middle;
+    }
+    
+    &__img {
         
-//        &--positioning {
-//            position: absolute;
-//            top: 0;
-//            left: 0;
-//        }
+        &--left {
+        float: left;
+    }
+        
+        &--right {
+            float: right;
+        }
+}
+    
+    
         
         &--custom-size-1 {
             padding-left: 60px;
@@ -130,4 +155,4 @@
         font-weight: bold;
         color: #000;
     }
-}
+

@@ -2,6 +2,8 @@
         max-width: 1200px;
         min-height: 115px;
         margin: 0 auto;
+        margin-top: 11px;
+        margin-bottom: -2px;
 //        text-align: center;
         
     @media #{$desktop} {
@@ -10,7 +12,8 @@
     
     &__logo {
         display: inline-block;
-        margin-right: 60px;
+        margin-right: 55px;
+        margin-top: 11px;
         line-height: normal;
         vertical-align: middle;
         
@@ -40,12 +43,13 @@
         
         &-hours {
             font-size: 14px;
-            line-height: 22px;
+            line-height: 12px;
             color: #969696;
         }
         
         &-phone a {
             font-size: 30px;
+            line-height: 34px;
             font-weight: 600;
             text-decoration: none;
             color: #000;
@@ -55,13 +59,16 @@
     &__callback {
         position: relative;
         display: inline-block;
-        margin-right: 55px;
-        padding: 15px 10px 15px 40px;
+        margin-right: 171px;
+        margin-top: 7px;
+        margin-left: -9px;
+        padding: 10px 10px 14px 40px;
         line-height: normal;
         vertical-align: middle;
         font-size: 14px;
         border: 1px solid #acacac;
         border-radius: 5px;
+        box-sizing: border-box;
         
         @media #{$desktop} {
             margin-left: 20px;
@@ -77,7 +84,7 @@
         &::before {
             position: absolute;
             content: "";
-            top: 15px;
+            top: 9px;
             left: 10px;
             width: 19px;
             height: 21px;
@@ -113,7 +120,8 @@
         }
         
         & li:not(:last-child) {
-            margin-right: 35px;
+            margin-top: 10px;
+            margin-right: 29px;
         }
     }
 }

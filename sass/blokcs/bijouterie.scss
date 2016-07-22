@@ -4,13 +4,14 @@
     &__wrapper {
         position: relative;
         max-width: 1200px;
-        min-height: 450px;
+        min-height: 431px;
         margin: 0 auto;
     }
     
     &__img {
         float: right;
-        margin-top: 80px;
+        margin-top: 83px;
+        margin-right: 85px;
         
         @media (max-width: 1050px) {
             float: none;
@@ -21,7 +22,8 @@
     &__descr {
         float: left;
         max-width: 685px;
-        margin-top: 120px;
+        margin-top: 106px;
+        margin-left: 76px;
         
         @media (max-width: 1050px) {
             float: none;
@@ -60,7 +62,7 @@
 }
     
     &__sub-text {
-        margin-top: 80px;
+        margin-top: 70px;
         font-size: 22px;
     }
 }

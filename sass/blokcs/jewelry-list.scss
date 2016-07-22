@@ -4,9 +4,9 @@
     
     &__body {
         float: left;
-        margin-top: 202px;
+        margin-top: 208px;
         max-width: 450px;
-        padding: 25px 20px 30px 13px;
+        padding: 13px 20px 30px 8px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         box-sizing: border-box;
@@ -42,7 +42,8 @@
     
     &__item {
         position: relative;
-        margin-bottom: 16px;
+        margin-top: 25px;
+        margin-bottom: -11px;
         font-size: 14px;
         color: #9177a7;
         list-style: none;

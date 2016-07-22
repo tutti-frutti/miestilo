@@ -1,7 +1,7 @@
 .profit-list {
     max-width: 1100px;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 65px;
     margin-bottom: 50px;
     text-align: center;
     padding: 0;
@@ -25,6 +25,8 @@
         }
         
         &--bag {
+            margin-left: 19px;
+            margin-right: 47px;
             &::before {
                 position: absolute;
                 content: "";
@@ -37,6 +39,7 @@
         }
         
         &--scales {
+            margin-right: 28px;
             &::before {
                 position: absolute;
                 content: "";
@@ -49,6 +52,7 @@
         }
         
         &--jeverly {
+            margin-right: 21px;
             &::before {
                 position: absolute;
                 content: "";

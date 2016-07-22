@@ -5,12 +5,13 @@
     &__wrapper {
         position: relative;
         max-width: 1200px;
-        min-height: 450px;
+        min-height: 419px;
         margin: 0 auto;
     }
     
     &__img {
         float: left;
+        margin-left: 52px;
         
         & > img {
             width: 100%;
@@ -37,7 +38,9 @@
     }
     
     &__text {
-        padding: 25px;
+        padding: 10px;
+        margin-left: 41px;
+        margin-top: 14px;
         font-size: 30px;
         line-height: 48px;
         

@@ -1,8 +1,13 @@
 .work-advantage {
     max-width: 1200px;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     padding: 0;
+    
+    &__top-title {
+        padding-top: 66px;
+        margin-bottom: 14px;
+    }
     
     &__general {
         margin-top: 55px;
@@ -12,7 +17,8 @@
     
     &--left {
         float: left;
-        margin-top: 130px;
+        margin-top: 105px;
+        margin-left: 120px;
         max-width: 380px;
         
         @media #{$desktop} {
@@ -23,7 +29,8 @@
     
     &--right {
         float: right;
-        margin-top: 130px;
+        margin-top: 108px;
+        margin-right: 43px;
         max-width: 510px;
         
         @media #{$desktop} {
@@ -63,6 +70,7 @@
 //        }
         
         &--libra {
+            margin-right: 0;
             &::before {
                 position: absolute;
                 content: "";
@@ -89,6 +97,7 @@
         }
         
         &--tested {
+            margin-right: 48px;
             &::before {
                 position: absolute;
                 content: "";
@@ -115,6 +124,7 @@
         }
         
         &--crystal {
+            margin-right: 3px;
             &::before {
                 position: absolute;
                 content: "";
@@ -147,31 +157,31 @@
         list-style: none;
         
         &:nth-child(1) {
-            margin-bottom: 20px;
+            margin-bottom: 12px;
         }
         
         &:nth-child(2) {
-            margin-bottom: 55px;
+            margin-bottom: 44px;
         }
         
         &:nth-child(3) {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         
         &--marginl-1 { // использовал модификатор вместо псевдокласса для того, чтобы в след списке задать произвольный отступ по другому модификатору. в данном случае nth-child "наследуется" и и его можно изменить только через !important
-            margin-bottom: 65px;
+            margin-bottom: 61px;
         }
         
         &:nth-child(5) {
-            margin-bottom: 25px;
+            margin-bottom: 16px;
         }
         
         &--marginl-2 { // аналогично с --marginb-1
-            margin-bottom: 70px;
+            margin-bottom: 66px;
         }
         
         &:nth-child(7) {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         
         &:nth-child(odd) {
@@ -187,11 +197,11 @@
         //БЛОК work-advantage work-advantage--right
         
         &--marginr-1 {
-            margin-bottom: 47px;
+            margin-bottom: 41px;
         }
         
         &--marginr-2 {
-            margin-bottom: 52px;
+            margin-bottom: 49px;
         }
         
         &--round {

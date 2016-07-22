@@ -1,33 +1,38 @@
 .main-nav {
     position: relative;
     min-height: 48px;
+    box-sizing: border-box;
     
     &__left {
     float: left;
-    width: 45%;
+    width: 44%;
     background-color: #64168b;
     }
     
     &__right {
     float: right;
-    width: 55%;
+    width: 56%;
     background-color: #000000;
     }
     
     &__items-left {
         margin-left: auto;
+        margin-top: 13px;
+        margin-bottom: 13px;
         max-width: 550px;
         text-align: right;
     }
     
     &__items-right {
+        margin-top: 13px;
+        margin-bottom: 13px;
         padding: 0;
         text-align: left;
     }
     
     
     &__link {
-            padding: 17px;
+            padding: 13px;
             font-size: 14px;
             line-height: 21px;
             text-transform: uppercase;
@@ -79,7 +84,7 @@
             position:absolute;
             content: "";
             top: 5px;
-            left: 100px;
+            left: 91px;
             width: 10px;
             height: 10px;
             border-radius: 50%;
@@ -88,11 +93,31 @@
      }
         //блок модификаторов для задания отступов в меню в левой     части
         &--margin-1 {
-            margin-right: 70px;
+            margin-right: 58px;
         }
         
         &--margin-2 {
-            margin-right: 70px;
+            margin-right: 25px;
+        }
+        
+        &--margin-3 {
+            margin-right: 21px;
+        }
+        
+        &--wedding {
+            margin-right: 8px;
+        }
+        
+        &--watch {
+            margin-right: 17px;
+        }
+        
+        &--men {
+            margin-right: 5px;
+        }
+        
+        &--review {
+            margin-right: 30px;
         }
   }
     

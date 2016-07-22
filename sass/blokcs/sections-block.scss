@@ -6,7 +6,7 @@
     
     &__title {
         position: relative;
-        padding: 85px 0 70px 0;
+        padding: 77px 0 70px 0;
         margin: 0;
         font-size: 35px;
         line-height: 32px;
@@ -58,6 +58,7 @@
     }
     
     &__sub-title {
+        margin-top: -8px;
         padding: 0 300px;
         font-size: 18px;
         
@@ -73,17 +74,23 @@
     
     .sections-list {
         
+        padding-bottom: 105px;
+        
+        &__list {
+            
+        }
+        
         &__items {
             display: inline-block;
             padding-top: 125px;
-            margin-right: 140px;
+            margin-right: 115px;
             width: 200px;
             font-size: 14px;
             line-height: 18px;
             font-weight: 300;
             list-style: none;
             
-            @media (max-width: 1000px) {
+            @media #{$desktop} {
                 margin: 10px 0;
             }
         
@@ -94,7 +101,7 @@
                 content: "";
                 width: 100px;
                 height: 100px;
-                top: 0;
+                top: 20px;
                 left: 50px;
                 border: 2px solid #edece9;
                 border-radius: 100%;
@@ -109,7 +116,7 @@
                 content: "";
                 width: 100px;
                 height: 100px;
-                top: 0;
+                top: 11px;
                 left: 50px;
                 background: url("/img/icon-earn-1.png") no-repeat 50% 50%;
             }
@@ -121,7 +128,7 @@
                 content: "";
                 width: 100px;
                 height: 100px;
-                top: 0;
+                top: 11px;
                 left: 50px;
                 background: url("/img/icon-earn-2.png") no-repeat 50% 50%;
             }
@@ -135,7 +142,7 @@
                 content: "";
                 width: 100px;
                 height: 100px;
-                top: 0;
+                top: 11px;
                 left: 50px;
                 background: url("/img/icon-earn-3.png") no-repeat 50% 50%;
             }
