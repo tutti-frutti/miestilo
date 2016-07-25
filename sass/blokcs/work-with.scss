@@ -2,20 +2,26 @@
     margin-top: 90px;
     background: #f6f7f6;
     
+    &__title-top {
+        padding-top: 45px;
+        font-weight: lighter;
+    }
+    
     &__list {
         padding: 0;
-        padding-bottom: 60px;
-        max-width: 715px;
+        padding-bottom: 79px;
         margin: 0 auto;
+        margin-top: 33px;
+        max-width: 715px;
         text-align: center;
     }
     
     &__items {
         position: relative;
         display: inline-block;
-        padding-top: 90px;
+        padding-top: 85px;
         margin-right: 70px;
-        margin-bottom: 45px;
+        margin-bottom: 35px;
         width: 165px;
         font-size: 14px;
         line-height: 18px;
@@ -24,6 +30,12 @@
         vertical-align: top;
         
         &--handbag {
+            margin-right: 113px;
+            
+            @media #{$tablet} {
+                margin-right: 0;
+            }
+            
             &::before {
                 position: absolute;
                 content: "";
@@ -37,6 +49,12 @@
         }
         
         &--suitcase {
+            margin-right: 98px;
+            
+            @media #{$tablet} {
+                margin-right: 0;
+            }
+            
             &::before {
                 position: absolute;
                 content: "";
@@ -54,7 +72,7 @@
             &::before {
                 position: absolute;
                 content: "";
-                top: 15px;
+                top: 20px;
                 left: 50%;
                 margin-left: -25px;
                 width: 50px;
@@ -64,6 +82,12 @@
         }
         
         &--star {
+            margin-right: 100px;
+            
+            @media #{$tablet} {
+                margin-right: 0;
+            }
+            
             &::before {
                 position: absolute;
                 content: "";

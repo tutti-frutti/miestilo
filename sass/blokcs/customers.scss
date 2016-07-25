@@ -6,45 +6,23 @@
         padding-top: 63px;
     }
     
+    &__list {
+        margin-bottom: 69px;
+    }
+    
     &__items {
         position: relative;
         display: inline-block;
+        margin-bottom: 45px;
         list-style: none;
         font-size: 14px;
         line-height: 21px;
         font-weight: 100;
         color: #6b6b6b;
-    }
-    
-    &__descr {
-        display: table;
-        height: 133px;
-    }
-    
-    &__text {
-        display: table-cell;
-        max-width: 680px;
-        padding-left: 60px;
-        padding-right: 60px;
-        vertical-align: middle;
-    }
-    
-    &__img {
-        
-        &--left {
-        float: left;
-    }
-        
-        &--right {
-            float: right;
-        }
-}
-    
-    
         
         &--custom-size-1 {
             padding-left: 60px;
-            padding-top: 10px;
+            padding-top: 44px;
             max-width: 680px;
             vertical-align: top;
             
@@ -52,22 +30,31 @@
             &::before {
                 position: absolute;
                 content: "";
-                top: 95px;
-                left: 0;
+                top: 127px;
+                left: 197px;
                 width: 52px;
                 height: 37px;
                 background: url("/img/cite-1.png") no-repeat 50% 50%;
+                
+                @media #{$tablet} {
+                    left: 0;
+                }
                 
             }
             
             &::after {
                 position: absolute;
                 content: "";
-                top: -13px;
-                right: -60px;
+                bottom: 111px;
+                right: 4px;
                 width: 52px;
                 height: 37px;
                 background: url("/img/cite-2.png") no-repeat 50% 50%;
+                
+                @media #{$tablet} {
+                   bottom: -40px;
+                    right: 0;
+                }
             }
             
             @media #{$desktop} {
@@ -85,65 +72,149 @@
             &::before {
                 position: absolute;
                 content: "";
-                top: 109px;
-                left: 47px;
+                top: 119px;
+                left: 110px;
                 width: 52px;
                 height: 37px;
                 background: url("/img/cite-1.png") no-repeat 50% 50%;
+                
+                @media #{$tablet} {
+                    left: 0;
+                }
                 
             }
             
             &::after {
                 position: absolute;
                 content: "";
-                top: 2px;
-                right: 16px;
+                bottom: 96px;
+                right: 165px;
                 width: 52px;
                 height: 37px;
                 background: url("/img/cite-2.png") no-repeat 50% 50%;
-            }
-            
-            @media #{$desktop} {
-                padding-left: 0;
-                padding-right: 0;
-        }
-            
-        }
-        
-        &--custom-size-3 {
-            padding-right: 70px;
-            padding-left: 105px;
-            padding-top: 25px;
-            max-width: 680px;
-            vertical-align: top;
-            
-            &::before {
-                position: absolute;
-                content: "";
-                top: 110px;
-                left: 40px;
-                width: 52px;
-                height: 37px;
-                background: url("/img/cite-1.png") no-repeat 50% 50%;
                 
-            }
-            
-            &::after {
-                position: absolute;
-                content: "";
-                top: 2px;
-                right: 16px;
-                width: 52px;
-                height: 37px;
-                background: url("/img/cite-2.png") no-repeat 50% 50%;
+                @media #{$tablet} {
+                   bottom: -40px;
+                    right: 0;
+                }
             }
             
             @media #{$desktop} {
                 padding-left: 0;
                 padding-right: 0;
-        }
         }
     }
+        
+               &--custom-size-3 {
+                    padding-right: 70px;
+                    padding-left: 105px;
+                    padding-top: 49px;
+                    max-width: 680px;
+                    vertical-align: top;
+            
+            &::before {
+                    position: absolute;
+                    content: "";
+                    top: 130px;
+                    left: 236px;
+                    width: 52px;
+                    height: 37px;
+                    background: url("/img/cite-1.png") no-repeat 50% 50%;
+                
+                @media #{$tablet} {
+                   left: 0;
+                }
+            }
+            
+            &::after {
+                    position: absolute;
+                    content: "";
+                    bottom: 84px;
+                    right: 46px;
+                    width: 45px;
+                    height: 37px;
+                    background: url("/img/cite-2.png") no-repeat 50% 50%;
+                
+                @media #{$tablet} {
+                   bottom: -40px;
+                    right: 0;
+                }
+            }
+            
+            @media #{$desktop} {
+                    padding-left: 0;
+                    padding-right: 0;
+        }
+    }
+}
+
+    
+    &__descr {
+        display: table;
+        height: 133px;
+        margin-left: 103px;
+        
+        @media #{$tablet} {
+            margin-left: 0;
+        }
+    }
+    
+    &__text {
+        display: table-cell;
+        max-width: 680px;
+        padding-left: 60px;
+        padding-right: 60px;
+        vertical-align: middle;
+        
+        @media #{$tablet} {
+            padding-left: 20px;
+            padding-right: 0;
+        }
+}
+    
+    &__img {
+        
+        &--left-1 {
+            float: left;
+            margin-top: 31px;
+            margin-left: 67px;
+            
+            @media #{$tablet} {
+                float: none;
+                margin-top: 0;
+                margin-left: 0;
+                text-align: center;
+            }
+    }
+        
+        &--left-2 {
+            float: left;
+            margin-top: 10px;
+            margin-left: 58px;
+            margin-right: 46px;
+            
+            @media #{$tablet} {
+                float: none;
+                margin-top: 0;
+                margin-left: 0;
+                margin-right: 0;
+                text-align: center;
+            }
+    }
+        
+        &--right {
+            float: right;
+            margin-top: 10px;
+            margin-left: 16px;
+            
+            @media #{$tablet} {
+                float: none;
+                text-align: center;
+            }
+        }
+    }
+    
+}    
     
     &__name {
         display: block;

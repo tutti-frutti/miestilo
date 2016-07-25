@@ -14,8 +14,8 @@
         text-align: center;
         color: #2c2c2c;
         
-        @media #{$desktop} {
-            font-size: 25px;
+        @media #{$tablet} {
+            font-size: 20px;
     }
         
         &--bold {
@@ -89,6 +89,10 @@
             line-height: 18px;
             font-weight: 300;
             list-style: none;
+            
+            @media #{$tablet} {
+                margin-right: 0;
+            }
             
             @media #{$desktop} {
                 margin: 10px 0;

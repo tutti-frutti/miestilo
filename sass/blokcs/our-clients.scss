@@ -1,10 +1,15 @@
 .our-clients {
     max-width: 1150px;
     margin: 0 auto;
-    margin-bottom: 110px;
+    margin-bottom: 98px;
     text-align: center;
     
+    &__title-top {
+        padding-top: 55px;
+    }
+    
     &__list {
+        margin-top: 6px;
         padding: 0;
     }
     

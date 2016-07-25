@@ -13,8 +13,7 @@
         color: #fff;
         background: #443451;
         
-        @media (max-width: 1000px) {
-            
+        @media #{$tablet} {
             float: none;
             margin: 0 auto;
             margin-bottom: 20px;
@@ -23,10 +22,22 @@
     
     &__items {
         padding-left: 40px;
+        
+        &--bottom {
+            padding-top: 12px;
+            padding-left: 20px;
+        }
     }
     
     &__body-bottom {
         margin-top: 175px;
+        margin-left: 11px;
+        padding-bottom: 12px;
+        
+        @media #{$tablet} {
+            margin-top: 35px;
+            margin: 0 auto;
+        }
     }
     
     &__title {
@@ -60,10 +71,11 @@
         
         &--bolder {
             font-weight: 600;
+            position: static;
         }
     }
     
-    &__item:not(:last-child)::before {
+    &__item::before {
         position: absolute;
         content: "";
         top: 5px;
@@ -73,9 +85,9 @@
         background: url("/img/icon-plus.png") no-repeat 50% 50%;
     }
     
-    &__bottom {
-        position: static;
-        margin-bottom: 20px;
+    &__item-2 {
+//        position: static;
+        margin-bottom: 24px;
         font-size: 14px;
         line-height: 23px;
         color: #9177a7;

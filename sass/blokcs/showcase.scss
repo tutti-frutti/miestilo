@@ -6,11 +6,11 @@
     box-sizing: border-box;
     background: #fff;
     
-    @media (max-width: 1000px) {
-            
+    @media #{$tablet} {
             float: none;
             margin: 0 auto;
             margin-bottom: 20px;
+            overflow: hidden;
         } 
     
     &__title {
@@ -25,6 +25,10 @@
         &--line-through {
             font-weight: normal;
             text-decoration: line-through;
+        }
+        
+        @media #{$tablet} {
+            font-size: 20px;
         }
     }
     
@@ -54,8 +58,14 @@
 }
 
 .form-wrapper-bottom {
-    margin-top: 20px;
-    padding: 45px 20px 17px 20px;
+    margin-top: 24px;
+    margin-right: 5px;
+    padding: 38px 20px 50px 20px;
+    
+    @media #{$tablet} {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
 }
 
 //FORM CONNECT
@@ -87,6 +97,10 @@
     
     &__mail-inputs-wrapper {
         margin-bottom: 34px;
+    }
+    
+    &__mail-bottom {
+        margin-bottom: 18px;
     }
     
     //блок со стилями для input

@@ -3,10 +3,22 @@
     min-height: 48px;
     box-sizing: border-box;
     
+    &__toogle {
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 50px;
+        top: 5px;
+        left: 0;
+        background: url("/img/icon-hamburger.png") no-repeat 50% 50%;
+    }
+    
     &__left {
     float: left;
     width: 44%;
     background-color: #64168b;
+        
+       
     }
     
     &__right {
@@ -21,6 +33,11 @@
         margin-bottom: 13px;
         max-width: 550px;
         text-align: right;
+        
+         @media #{$tablet} {
+//            padding-top: 10px;
+//            padding-bottom: 6px;
+        }
     }
     
     &__items-right {
@@ -76,6 +93,15 @@
         display: inline-block;
         list-style: none;
         
+        @media #{$tablet} {
+            display: block;
+            margin: 20px;
+        }
+        
+        @media #{$desktop} {
+            display: inline-block;
+        }
+        
         
         &--circle {
             position:relative;
@@ -94,6 +120,10 @@
         //блок модификаторов для задания отступов в меню в левой     части
         &--margin-1 {
             margin-right: 58px;
+            
+            @media #{$tablet} {
+                margin-right: 25px;
+            }
         }
         
         &--margin-2 {

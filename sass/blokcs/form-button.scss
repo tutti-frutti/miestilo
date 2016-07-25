@@ -14,5 +14,9 @@
         font-size: 16px;
         color: #fff;
         background: #8d2275;
+        
+        @media #{$tablet} {
+            width: 255px;
+        }
     }
 }

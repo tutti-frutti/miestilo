@@ -27,6 +27,12 @@
         &--bag {
             margin-left: 19px;
             margin-right: 47px;
+            
+            @media #{$tablet} {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            
             &::before {
                 position: absolute;
                 content: "";
@@ -40,6 +46,13 @@
         
         &--scales {
             margin-right: 28px;
+            
+            
+            @media #{$tablet} {
+                margin-right: 0;
+                margin-left: 0;
+            }
+            
             &::before {
                 position: absolute;
                 content: "";
@@ -53,6 +66,12 @@
         
         &--jeverly {
             margin-right: 21px;
+            margin-left: 0;
+            
+            @media #{$tablet} {
+                margin-right: 0;
+            }
+            
             &::before {
                 position: absolute;
                 content: "";
@@ -66,6 +85,10 @@
         
         &--man {
             margin-right: 0;
+            
+            @media #{$tablet} {
+                margin-right: 50px;
+            }
             
             @media #{$desktop} {
                 margin-right: 50px;

@@ -13,9 +13,19 @@
         margin-top: 83px;
         margin-right: 85px;
         
-        @media (max-width: 1050px) {
+        & > img {
+            max-width: 100%;
+        }
+        
+        @media #{$tablet} {
             float: none;
+            width: 100%;
+            margin-right: 0;
             text-align: center;
+        }
+        
+        @media #{$desktop} {
+            margin-right: 55px;
         }
     }
     
@@ -25,7 +35,7 @@
         margin-top: 106px;
         margin-left: 76px;
         
-        @media (max-width: 1050px) {
+        @media #{$tablet} {
             float: none;
             margin: 0 auto;
             margin-top: 100px;
@@ -33,11 +43,19 @@
             text-align: center;
         }
         
+        @media #{$desktop} {
+            max-width: 545px;
+        }
+        
     }
     
     &__text {
         position: relative;
         font-size: 35px;
+        
+        @media #{$tablet} {
+            font-size: 23px;
+        }
         
         @media #{$desktop} {
             font-size: 25px;

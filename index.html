@@ -20,8 +20,10 @@
         <li class="header__contacts-hours">с 10:00 до 21:00 по Москве</li>
     </ul>
 
-
+    <div class="header__callback-wrapper">
+        <button class="main-nav__toogle"></button>
     <div class="header__callback"><a href="#">Обратный звонок</a></div>
+    </div>
 
 
     <ul class="header__user-nav">
@@ -42,6 +44,7 @@
 
 
 <nav class="main-nav clearfix">
+    
     <div class="main-nav__left">
         <ul class="main-nav__items-left">
             <li class="main-nav__item main-nav__item--margin-1 main-nav__item--circle">
@@ -64,9 +67,11 @@
             <li class="main-nav__item  main-nav__item--men"><a class="main-nav__link" href="#">Для мужчин</a></li>
             <li class="main-nav__item  main-nav__item--gide"><a class="main-nav__link" href="#">Гид по подаркам</a></li>
             <li class="main-nav__item  main-nav__item--review"><a class="main-nav__link" href="#">Мода обзоры</a></li>
+<!--
             <li class="main-nav__item  main-nav__item--">
                 <a class="main-nav__link main-nav__link--icon-search" href="#"></a>
             </li>
+-->
         </ul>
     </div>
 </nav>
@@ -358,9 +363,9 @@
        
         <li class="customers__items">
             
-            <div class="customers__img  customers__img--left"><img src="/img/customers-1.png" alt="Наши клиенты"></div>
+            <div class="customers__img  customers__img--left-1"><img src="/img/customers-1.png" alt="Наши клиенты"></div>
             <div class="customers__descr">
-                <p class="customers__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span class="customers__name">Антон Малененко</span></p>
+                <p class="customers__text  customers__items--custom-size-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span class="customers__name">Антон Малененко</span></p>
             </div>
         </li>
         
@@ -368,15 +373,15 @@
             
             <div class="customers__img  customers__img--right"><img src="/img/customers-2.png" alt="Наши клиенты"></div>
             <div class="customers__descr">
-                <p class="customers__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span class="customers__name">Антон Малененко</span></p>
+                <p class="customers__text  customers__items--custom-size-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span class="customers__name">Антон Малененко</span></p>
             </div>
             
         </li>
         <li class="customers__items">
            
-            <div class="customers__img  customers__img--left"><img src="/img/customers-3.png" alt="Наши клиенты"></div>
+            <div class="customers__img  customers__img--left-2"><img src="/img/customers-3.png" alt="Наши клиенты"></div>
             <div class="customers__descr">
-                <p class="customers__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span class="customers__name">Антон Малененко</span></p>
+                <p class="customers__text  customers__items--custom-size-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span class="customers__name">Антон Малененко</span></p>
             </div>
     </ul>
     
@@ -403,7 +408,7 @@
 
     <div class="work-with">
         <div class="sections-block">
-            <h2 class="sections-block__title  sections-block__title--color-line">С кем мы <span class="sections-block__title sections-block__title--bold2">работаем</span></h2>
+            <h2 class="sections-block__title  work-with__title-top  sections-block__title--color-line">С кем мы <span class="sections-block__title sections-block__title--bold2">работаем</span></h2>
         </div>
         <ul class="work-with__list">
             <li class="work-with__items  work-with__items--handbag">Владельцы розничных магазинов бижутерии</li>
@@ -415,7 +420,7 @@
     </div>
 
     <div class="sections-block">
-        <h2 class="sections-block__title  sections-block__title--decor-line"><span class="sections-block__title sections-block__title--bold2">Сколько зарабатывают</span> наши партнеры</h2>
+        <h2 class="sections-block__title  benefit__title-top  sections-block__title--decor-line"><span class="sections-block__title sections-block__title--bold2">Сколько зарабатывают</span> наши партнеры</h2>
     </div>
 
     <div class="benefit">
@@ -476,7 +481,7 @@
     </div>
 
     <div class="sections-block">
-        <h2 class="sections-block__title  sections-block__title--decor-line">C нами <span class="sections-block__title sections-block__title--bold2">работают</span></h2>
+        <h2 class="sections-block__title  our-clients__title-top  sections-block__title--decor-line">C нами <span class="sections-block__title sections-block__title--bold2">работают</span></h2>
     </div>
 
     <div class="our-clients">
@@ -511,15 +516,15 @@
     <div class="list-form-wrapper list-form-wrapper--bottom clearfix">
 
         <div class="jewelry-list">
-            <div class="jewelry-list__body jewelry-list__body-bottom">
+            <div class="jewelry-list__body  jewelry-list__body-bottom">
 
-                <ul class="jewelry-list__items">
-                    <li class="jewelry-list__bottom"><span class="jewelry-list__item  jewelry-list__item--bold">Минимальная сумма заказа 16 000 руб.</span>
+                <ul class="jewelry-list__items  jewelry-list__items--bottom">
+                    <li class="jewelry-list__item-2"><span class="jewelry-list__item  jewelry-list__item--bold">Минимальная сумма заказа 16 000 руб.</span>
                         <br> (с учетом оптовой скидки)</li>
-                    <li class="jewelry-list__bottom">При заказе на сумму от<span class="jewelry-list__item  jewelry-list__item--bold"> 30 000 рублей доставка бесплатная</span></li>
-                    <li class="jewelry-list__bottom"><span class="jewelry-list__item  jewelry-list__item--bold">Мы работаем по 100% предоплате,</span> которую Вы можете внести любым удобным способом: </li>
-                    <li class="jewelry-list__bottom"><span class="jewelry-list__item  jewelry-list__item--white">-перевод денег на расчетный счет, банковскую карту</span> (для клиентов других городов)</li>
-                    <li class="jewelry-list__bottom"><span class="jewelry-list__item  jewelry-list__item--white">-наличными при самовывозе</span> (Санкт-Петербург, Наб. реки Мойки д. 60, лит.В, офис 207)</li>
+                    <li class="jewelry-list__item-2">При заказе на сумму от<span class="jewelry-list__item  jewelry-list__item--bold"> 30 000 рублей доставка бесплатная</span></li>
+                    <li class="jewelry-list__item-2"><span class="jewelry-list__item  jewelry-list__item--bold">Мы работаем по 100% предоплате,</span> которую Вы можете внести любым удобным способом: </li>
+                    <li class="jewelry-list__item-2"><span class="jewelry-list__item  jewelry-list__item--white">-перевод денег на расчетный счет, банковскую карту</span> (для клиентов других городов)</li>
+                    <li class="jewelry-list__item-2"><span class="jewelry-list__item  jewelry-list__item--white">-наличными при самовывозе</span> (Санкт-Петербург, Наб. реки Мойки д. 60, лит.В, офис 207)</li>
                 </ul>
             </div>
 
@@ -546,7 +551,7 @@
                         <input class="form-connect__text-inputs" type="text" name="" id="city" placeholder="Ваш город">
                     </div>
 
-                    <div class="form-connect__mail-inputs-wrapper">
+                    <div class="form-connect__mail-inputs-wrapper  form-connect__mail-bottom">
                         <input class="form-connect__mail-inputs" type="email" placeholder="E-mail">
                     </div>
 
@@ -607,8 +612,8 @@
     </div>
 </footer>
 
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
 <body>
 </body>
 

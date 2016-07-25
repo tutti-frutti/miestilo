@@ -3,6 +3,10 @@
     background: url("/img/earn-bg.jpg") no-repeat 50% 50%;
     background-size: cover;
     
+    &__title-top {
+        padding-top: 54px;
+    }
+    
     &__wrapper {
         padding-top: 30px;
         max-width: 875px;
@@ -19,8 +23,15 @@
         background: #fff;
         box-sizing: border-box;
         
+        
         &--margin-zero{
             margin-right: 0;
+        }
+        
+        @media #{$tablet} {
+            float: none;
+            margin: 0 auto;
+            margin-bottom: 20px;
         }
         
         @media #{$desktop} {
@@ -33,7 +44,7 @@
     &__img {
         text-align: center;
         margin-top: 35px;
-        margin-bottom: 40px;
+        margin-bottom: 26px;
     }
     
     &__descr {
