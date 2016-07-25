@@ -11,7 +11,12 @@
             margin: 0 auto;
             margin-bottom: 20px;
             overflow: hidden;
-        } 
+        }
+    
+//    @media #{$desktop-sm} {
+//            float: none;
+//            margin: 0 auto;
+//    }
     
     &__title {
         margin: 0;

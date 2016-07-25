@@ -26,6 +26,10 @@
         @media #{$desktop} {
             margin-left: 30px;
         }
+        
+        @media #{$desktop-sm} {
+            margin-left: 20px;
+        }
     }
     
     &__descr {
@@ -40,9 +44,12 @@
             text-align: center;
         }
         
-        @media #{$tablet} {
-            margin-top: 45px;
-        }
+//        @media #{$desktop-sm} {
+//            float: none;
+//            width: auto;
+//            margin-top: 0;
+//            text-align: center;
+//        }
         
     }
     

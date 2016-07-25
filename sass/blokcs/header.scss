@@ -41,9 +41,15 @@
             margin-right: 0;
         }
         
+        
+        
         @media #{$desktop} {
             margin-left: 20px;
             margin-right: 20px;
+}
+        @media #{$desktop-sm} {
+            margin-left: 10px;
+            margin-right: 10px;
 }
         
         &-delivery {
@@ -69,12 +75,16 @@
     
     &__callback-wrapper {
         position: relative;
+        
+        @media #{$desktop} {
+            display: inline-block;
+        }
     }
     
     &__callback {
         position: relative;
         display: inline-block;
-        margin-right: 171px;
+//        margin-right: 171px;
         margin-top: 7px;
         margin-left: -9px;
         padding: 10px 10px 14px 40px;
@@ -87,11 +97,20 @@
         
         @media #{$tablet} {
             margin-right: 0;
+//            display: block;
         }
         
+        
+        
         @media #{$desktop} {
+            display: inline-block;
             margin-left: 20px;
-            margin-right: 20px;
+            margin-right: 120px;
+}
+        @media #{$desktop-sm} {
+            display: inline-block;
+            margin-left: 0px;
+            margin-right: 15px;
 }
         
         & a {
@@ -150,9 +169,6 @@
         }
     }
 }
-    
-
-
 
 .reviews {
     position: relative;

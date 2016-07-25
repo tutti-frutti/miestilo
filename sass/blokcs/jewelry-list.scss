@@ -17,7 +17,15 @@
             float: none;
             margin: 0 auto;
             margin-bottom: 20px;
-        } 
+        }
+        
+//        @media #{$desktop-sm} {
+//            float: none;
+//            margin: 0 auto;
+//            margin-bottom: 20px;
+//        }
+        
+        
     }
     
     &__items {

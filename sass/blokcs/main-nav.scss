@@ -3,6 +3,14 @@
     min-height: 48px;
     box-sizing: border-box;
     
+    @media #{$tablet} {
+        display: none;
+    }
+    
+    @media #{$desktop} {
+        display: block;
+    }
+    
     &__toogle {
         position: absolute;
         content: "";
@@ -11,14 +19,16 @@
         top: 5px;
         left: 0;
         background: url("/img/icon-hamburger.png") no-repeat 50% 50%;
+        
+        @media #{$desktop} {
+            display: none;
+        }
     }
     
     &__left {
     float: left;
     width: 44%;
     background-color: #64168b;
-        
-       
     }
     
     &__right {
@@ -35,8 +45,8 @@
         text-align: right;
         
          @media #{$tablet} {
-//            padding-top: 10px;
-//            padding-bottom: 6px;
+            padding-top: 10px;
+            padding-bottom: 6px;
         }
     }
     
@@ -61,8 +71,16 @@
                 background: #fff;
     }
         
+        @media #{$desktop-sm} {
+                font-size: 12px;
+            }
+        
         &--bold {
             font-size: 18px;
+            
+            @media #{$desktop-sm} {
+                font-size: 14px;
+            }
         }
         
         &--icon {
@@ -82,8 +100,7 @@
             }
         
         }
-        
-        
+
     }
     
     &__item {
@@ -106,6 +123,8 @@
         &--circle {
             position:relative;
             
+            
+            
             &::before {
             position:absolute;
             content: "";
@@ -114,7 +133,11 @@
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            background-color: #8a29bb;    
+            background-color: #8a29bb;   
+                
+                @media #{$tablet} {
+                position: static;
+            }
         }
      }
         //блок модификаторов для задания отступов в меню в левой     части
@@ -124,6 +147,11 @@
             @media #{$tablet} {
                 margin-right: 25px;
             }
+            
+            @media #{$desktop-sm} {
+                margin-right: 30px;
+            }
+            
         }
         
         &--margin-2 {
@@ -136,18 +164,34 @@
         
         &--wedding {
             margin-right: 8px;
+            
+            @media #{$desktop-sm} {
+                margin-right: 0;
+            }
         }
         
         &--watch {
             margin-right: 17px;
+            
+            @media #{$desktop-sm} {
+                margin-right: 0;
+            }
         }
         
         &--men {
             margin-right: 5px;
+            
+            @media #{$desktop-sm} {
+                margin-right: 0;
+            }
         }
         
         &--review {
             margin-right: 30px;
+            
+            @media #{$desktop-sm} {
+                margin-right: 0;
+            }
         }
   }
     
