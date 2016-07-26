@@ -2,6 +2,7 @@
     position: relative;
     min-height: 48px;
     box-sizing: border-box;
+    background: #000;
     
     @media #{$tablet} {
         display: none;
@@ -12,6 +13,7 @@
     }
     
     &__toogle {
+        display: none;
         position: absolute;
         content: "";
         width: 50px;
@@ -20,8 +22,8 @@
         left: 0;
         background: url("/img/icon-hamburger.png") no-repeat 50% 50%;
         
-        @media #{$desktop} {
-            display: none;
+        @media #{$tablet} {
+            display: block;
         }
     }
     
@@ -44,9 +46,16 @@
         max-width: 550px;
         text-align: right;
         
+        
+        
          @media #{$tablet} {
             padding-top: 10px;
             padding-bottom: 6px;
+        }
+        
+        @media #{$tablet-sm} {
+            padding-top: 30px;
+            padding-bottom: 30px;
         }
     }
     
@@ -55,9 +64,11 @@
         margin-bottom: 13px;
         padding: 0;
         text-align: left;
+        
+        @media #{$tablet} {
+        margin-top: 20px;
     }
-    
-    
+}
     &__link {
             padding: 13px;
             font-size: 14px;
@@ -65,6 +76,10 @@
             text-transform: uppercase;
             text-decoration: none;
             color: #fff;
+        
+        @media #{$tablet} {
+            padding: 3px;
+        }
         
         &:hover {
                 color: #000;
@@ -112,7 +127,7 @@
         
         @media #{$tablet} {
             display: block;
-            margin: 20px;
+            margin: 15px;
         }
         
         @media #{$desktop} {
@@ -123,17 +138,19 @@
         &--circle {
             position:relative;
             
-            
-            
             &::before {
-            position:absolute;
-            content: "";
-            top: 5px;
-            left: 91px;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: #8a29bb;   
+                position:absolute;
+                content: "";
+                top: 5px;
+                left: 91px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #8a29bb;
+                
+                @media #{$desktop-sm} {
+                    position: static;
+                }
                 
                 @media #{$tablet} {
                 position: static;

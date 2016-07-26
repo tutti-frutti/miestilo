@@ -10,12 +10,20 @@
         font-weight: normal;
         box-sizing: border-box;
         
+        @media #{$tablet} {
+            padding-right: 10px;
+            font-size: 25px;
+            line-height: 35px;
+            text-align: center;
+            
+        }
+        
         &--upper {
             text-transform: uppercase;
             font-weight: bold;
         }
         
-        @media #{$desktop} {
+        @media #{$tablet} {
             font-size: 25px;
         }
     }

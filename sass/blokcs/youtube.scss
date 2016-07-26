@@ -4,6 +4,10 @@
     margin-top: 61px;
     margin-bottom: 87px;
     
+    @media #{$tablet} {
+        margin: 10px auto;
+    }
+    
     & > img {
         width: 100%
     }

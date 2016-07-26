@@ -2,6 +2,10 @@
     margin-top: 90px;
     background: #f6f7f6;
     
+    @media #{$tablet} {
+        margin-top: 50px;
+    }
+    
     &__title-top {
         padding-top: 45px;
         font-weight: lighter;
@@ -12,8 +16,16 @@
         padding-bottom: 79px;
         margin: 0 auto;
         margin-top: 33px;
-        max-width: 715px;
-        text-align: center;
+        max-width: 800px;
+        
+        @media #{$tablet} {
+                    text-align: center;
+        }
+        
+        @media #{$desktop-sm} {
+                    text-align: center;
+        }
+
     }
     
     &__items {
@@ -30,7 +42,8 @@
         vertical-align: top;
         
         &--handbag {
-            margin-right: 113px;
+            margin-left: 51px;
+            text-align: center;
             
             @media #{$tablet} {
                 margin-right: 0;
@@ -49,7 +62,9 @@
         }
         
         &--suitcase {
-            margin-right: 98px;
+            margin-left: 39px;
+            margin-right: 109px;
+            text-align: center;
             
             @media #{$tablet} {
                 margin-right: 0;
@@ -69,6 +84,8 @@
         
         &--screen {
                 margin-right: 0;
+                text-align: center;
+            
             &::before {
                 position: absolute;
                 content: "";
@@ -82,7 +99,10 @@
         }
         
         &--star {
-            margin-right: 100px;
+                margin-left: 193px;
+                margin-right: 91px;
+//                margin-top: 29px;
+                text-align: center;
             
             @media #{$tablet} {
                 margin-right: 0;
@@ -101,7 +121,8 @@
         }
         
         &--entepr {
-                margin-right: 0;
+//                margin-top: 29px;
+                text-align: center;
             &::before {
                 position: absolute;
                 content: "";
@@ -114,8 +135,14 @@
             }
         }
         
-        @media #{$desktop} {
+        @media #{$tablet} {
+            margin: 10px auto;
+        }
+        
+        @media #{$desktop-sm} {
             margin: 20px;
+            text-align: center;
+            
     }
     }
 }

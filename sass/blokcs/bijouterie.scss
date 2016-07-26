@@ -24,7 +24,7 @@
             text-align: center;
         }
         
-        @media #{$desktop} {
+        @media #{$desktop-sm} {
             margin-right: 55px;
         }
     }
@@ -38,8 +38,8 @@
         @media #{$tablet} {
             float: none;
             margin: 0 auto;
-            margin-top: 100px;
-            padding-top: 80px;
+            margin-top: 30px;
+            padding-top: 50px;
             text-align: center;
         }
         
@@ -57,7 +57,7 @@
             font-size: 23px;
         }
         
-        @media #{$desktop} {
+        @media #{$desktop-sm} {
             font-size: 25px;
     }
         
@@ -71,9 +71,14 @@
             height: 3px;
             background: url("/img/icon-title-line-color.png") no-repeat 50% 50%;
                 
-            @media #{$desktop} {
-                left: 50%;
-                margin-left: -49px;
+                @media #{$tablet} {
+                    left: 50%;
+                    margin-left: -49px;
+                }
+                
+                @media #{$desktop-sm} {
+                    left: 50%;
+                    margin-left: -49px;
             }
         }
     }

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    
     <title>Library</title>
 </head>
 
@@ -22,7 +26,7 @@
 
     <div class="header__callback-wrapper">
         <button class="main-nav__toogle"></button>
-    <div class="header__callback"><a href="#">Обратный звонок</a></div>
+        <div class="header__callback"><a href="#">Обратный звонок</a></div>
     </div>
 
 
@@ -44,7 +48,7 @@
 
 
 <nav class="main-nav clearfix">
-    
+
     <div class="main-nav__left">
         <ul class="main-nav__items-left">
             <li class="main-nav__item main-nav__item--margin-1 main-nav__item--circle">
@@ -67,7 +71,7 @@
             <li class="main-nav__item  main-nav__item--men"><a class="main-nav__link" href="#">Для мужчин</a></li>
             <li class="main-nav__item  main-nav__item--gide"><a class="main-nav__link" href="#">Гид по подаркам</a></li>
             <li class="main-nav__item  main-nav__item--review"><a class="main-nav__link" href="#">Мода обзоры</a></li>
-<!--
+            <!--
             <li class="main-nav__item  main-nav__item--">
                 <a class="main-nav__link main-nav__link--icon-search" href="#"></a>
             </li>
@@ -148,7 +152,7 @@
                 <img src="/img/bestsellers-img.jpg" alt="Хиты продаж">
             </div>
             <div class="bestsellers__descr">
-                <p class="bestsellers__text">Хиты продаж и популярные модели и коллекции<span class="bestsellers__text  bestsellers__text--bold">гарантированно поднимут продажи</span>и быстро вернут инвестиции</p>
+                <p class="bestsellers__text">Хиты продаж и популярные модели и коллекции <strong>гарантированно поднимут продажи</strong>и быстро вернут инвестиции</p>
             </div>
         </div>
     </div>
@@ -184,63 +188,63 @@
     </div>
 
     <div class="advantages">
-    
-    <ul class="advantages__list">
-        <li class="advantages__items">
-            
-               <div class="advantages__img">
-                <img src="/img/adv-1.jpg" alt="Наши преимущества">
-            </div>
-            
-            <div class="advantages__descr">
+
+        <ul class="advantages__list">
+            <li class="advantages__items">
+
+                <div class="advantages__img">
+                    <img src="/img/adv-1.jpg" alt="Наши преимущества">
+                </div>
+
+                <div class="advantages__descr">
                     <p class="advantages__text">Наша бижутерия является <strong>эксклюзивной</strong> и её не найти у конкурентов</p>
-            </div>
-        </li>
-        <li class="advantages__items">
-            <div class="advantages__img">
-                <img src="/img/adv-2.jpg" alt="Наши преимущества">
-            </div>
-            
-            <div class="advantages__descr">
+                </div>
+            </li>
+            <li class="advantages__items">
+                <div class="advantages__img">
+                    <img src="/img/adv-2.jpg" alt="Наши преимущества">
+                </div>
+
+                <div class="advantages__descr">
                     <p class="advantages__text"><strong>15 000 моделей</strong>, гипоаллергенный материалы</p>
-            </div>
-        </li>
-        <li class="advantages__items">
-            <div class="advantages__descr">
-                <p class="advantages__text"><strong>Увеличение прибыли</strong> магазина бижутерии в <strong>2,5 раза</strong></p>
-            </div>
-            <div class="advantages__img">
-                <img src="/img/adv-3.jpg" alt="Наши преимущества">
-            </div>
-        </li>
-        <li class="advantages__items">
-           <div class="advantages__descr">
+                </div>
+            </li>
+            <li class="advantages__items">
+                <div class="advantages__descr">
+                    <p class="advantages__text"><strong>Увеличение прибыли</strong> магазина бижутерии в <strong>2,5 раза</strong></p>
+                </div>
+                <div class="advantages__img">
+                    <img src="/img/adv-3.jpg" alt="Наши преимущества">
+                </div>
+            </li>
+            <li class="advantages__items">
+                <div class="advantages__descr">
                     <p class="advantages__text"><strong>Большая наценка до 300%</strong> как следствие, можно больше зарабатывать</p>
-            </div>
-            <div class="advantages__img">
-                <img src="/img/adv-4.jpg" alt="Наши преимущества">
-            </div>
-        </li>
-        <li class="advantages__items">
-           <div class="advantages__img">
-                <img src="/img/adv-5.jpg" alt="Наши преимущества">
-            </div>
-                   <div class="advantages__descr">
+                </div>
+                <div class="advantages__img">
+                    <img src="/img/adv-4.jpg" alt="Наши преимущества">
+                </div>
+            </li>
+            <li class="advantages__items">
+                <div class="advantages__img">
+                    <img src="/img/adv-5.jpg" alt="Наши преимущества">
+                </div>
+                <div class="advantages__descr">
                     <p class="advantages__text"><strong>10 000</strong> довольных <strong>покупателей</strong> интернет - магазина по РФ</p>
                 </div>
-            
-        </li>
-        <li class="advantages__items">
-            <div class="advantages__img">
-                <img src="/img/adv-6.jpg" alt="Наши преимущества">
-            </div>
-            <div class="advantages__descr">
+
+            </li>
+            <li class="advantages__items">
+                <div class="advantages__img">
+                    <img src="/img/adv-6.jpg" alt="Наши преимущества">
+                </div>
+                <div class="advantages__descr">
                     <p class="advantages__text"><strong>Фирменные бирки</strong> подтверждающие что украшения со Swarovski</p>
-                </div>    
-        </li>
-    </ul>
-    
-<!--
+                </div>
+            </li>
+        </ul>
+
+        <!--
         <ul class="advantages__list">
             <li class="advantages__items"><img src="/img/adv-1.jpg" alt="Наши преимущества"></li>
             <li class="advantages__items">Наша бижутерия является эксклюзивной и её не найти у конкурентов</li>
@@ -358,34 +362,34 @@
     </div>
 
     <div class="customers">
-    
-    <ul class="customers__list">
-       
-        <li class="customers__items">
-            
-            <div class="customers__img  customers__img--left-1"><img src="/img/customers-1.png" alt="Наши клиенты"></div>
-            <div class="customers__descr">
-                <p class="customers__text  customers__items--custom-size-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span class="customers__name">Антон Малененко</span></p>
-            </div>
-        </li>
-        
-           <li class="customers__items">
-            
-            <div class="customers__img  customers__img--right"><img src="/img/customers-2.png" alt="Наши клиенты"></div>
-            <div class="customers__descr">
-                <p class="customers__text  customers__items--custom-size-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span class="customers__name">Антон Малененко</span></p>
-            </div>
-            
-        </li>
-        <li class="customers__items">
-           
-            <div class="customers__img  customers__img--left-2"><img src="/img/customers-3.png" alt="Наши клиенты"></div>
-            <div class="customers__descr">
-                <p class="customers__text  customers__items--custom-size-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span class="customers__name">Антон Малененко</span></p>
-            </div>
-    </ul>
-    
-<!--
+
+        <ul class="customers__list">
+
+            <li class="customers__items">
+
+                <div class="customers__img  customers__img--left-1"><img src="/img/customers-1.png" alt="Наши клиенты"></div>
+                <div class="customers__descr">
+                    <p class="customers__text  customers__items--custom-size-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span class="customers__name">Антон Малененко</span></p>
+                </div>
+            </li>
+
+            <li class="customers__items">
+
+                <div class="customers__img  customers__img--right"><img src="/img/customers-2.png" alt="Наши клиенты"></div>
+                <div class="customers__descr">
+                    <p class="customers__text  customers__items--custom-size-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span class="customers__name">Антон Малененко</span></p>
+                </div>
+
+            </li>
+            <li class="customers__items">
+
+                <div class="customers__img  customers__img--left-2"><img src="/img/customers-3.png" alt="Наши клиенты"></div>
+                <div class="customers__descr">
+                    <p class="customers__text  customers__items--custom-size-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span class="customers__name">Антон Малененко</span></p>
+                </div>
+        </ul>
+
+        <!--
         <ul class="customers__list">
             <li class="customers__items"><img src="/img/customers-1.png" alt="Наши клиенты"></li>
             <li class="customers__items  customers__items--custom-size-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span class="customers__name">Антон Малененко</span></li>
@@ -471,11 +475,11 @@
         </div>
 
         <ul class="diploma__list">
-            <li class="diploma__items"><img src="/img/diploma-1.jpg" alt="Наши дипломы"></li>
-            <li class="diploma__items"><img src="/img/diploma-2.jpg" alt="Наши дипломы"></li>
-            <li class="diploma__items"><img src="/img/diploma-3.jpg" alt="Наши дипломы"></li>
-            <li class="diploma__items"><img src="/img/diploma-4.jpg" alt="Наши дипломы"></li>
-            <li class="diploma__items"><img src="/img/diploma-5.jpg" alt="Наши дипломы"></li>
+            <li class="diploma__items"><a class="fancybox" rel="gallery" href="/img/1_b.jpg" title="Test Text"><img src="/img/diploma-1.jpg" alt="Наши дипломы"></a></li>
+            <li class="diploma__items"><a class="fancybox" rel="gallery" href="/img/2_b.jpg" title="Test Text"><img src="/img/diploma-2.jpg" alt="Наши дипломы"></a></li>
+            <li class="diploma__items"><a class="fancybox" rel="gallery" href="/img/3_b.jpg" title="Test Text"><img src="/img/diploma-3.jpg" alt="Наши дипломы"></a></li>
+            <li class="diploma__items"><a class="fancybox" rel="gallery" href="/img/4_b.jpg" title="Test Text"><img src="/img/diploma-4.jpg" alt="Наши дипломы"></a></li>
+            <li class="diploma__items"><a class="fancybox" rel="gallery" href="/img/5_b.jpg" title="Test Text"><img src="/img/diploma-5.jpg" alt="Наши дипломы"></a></li>
         </ul>
 
     </div>
@@ -598,22 +602,37 @@
         </div>
 
         <div class="social">
-           <span class="social__title">Присоединиться</span>
+            <span class="social__title">Присоединиться</span>
             <ul class="social__list">
-                <li class="social__items"><a href="#"><img class="social__img" src="/img/social-1.png" alt="fb"></a></li>
-                <li class="social__items"><a href="#"><img class="social__img" src="/img/social-2.png" alt="tw"></a></li>
-                <li class="social__items"><a href="#"><img class="social__img" src="/img/social-3.png" alt="in"></a></li>
-                <li class="social__items"><a href="#"><img class="social__img" src="/img/social-4.png" alt="vk"></a></li>
-                <li class="social__items"><a href="#"><img class="social__img" src="/img/social-5.png" alt="ok"></a></li>
-                <li class="social__items"><a href="#"><img class="social__img" src="/img/social-6.png" alt="yt"></a></li>
-                <li class="social__items"><a href="#"><img class="social__img" src="/img/social-7.png" alt="inst"></a></li>
+                <li class="social__items">
+                    <a href="#"><img class="social__img" src="/img/social-1.png" alt="fb"></a>
+                </li>
+                <li class="social__items">
+                    <a href="#"><img class="social__img" src="/img/social-2.png" alt="tw"></a>
+                </li>
+                <li class="social__items">
+                    <a href="#"><img class="social__img" src="/img/social-3.png" alt="in"></a>
+                </li>
+                <li class="social__items">
+                    <a href="#"><img class="social__img" src="/img/social-4.png" alt="vk"></a>
+                </li>
+                <li class="social__items">
+                    <a href="#"><img class="social__img" src="/img/social-5.png" alt="ok"></a>
+                </li>
+                <li class="social__items">
+                    <a href="#"><img class="social__img" src="/img/social-6.png" alt="yt"></a>
+                </li>
+                <li class="social__items">
+                    <a href="#"><img class="social__img" src="/img/social-7.png" alt="inst"></a>
+                </li>
             </ul>
         </div>
     </div>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 <script src="js/script.js"></script>
+
 <body>
 </body>
 

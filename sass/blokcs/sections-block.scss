@@ -15,6 +15,7 @@
         color: #2c2c2c;
         
         @media #{$tablet} {
+            padding-top: 40px;
             font-size: 20px;
     }
         
@@ -76,6 +77,10 @@
         
         padding-bottom: 105px;
         
+        @media #{$tablet} {
+            padding-bottom: 20px;
+        }
+        
         &__list {
             
         }
@@ -95,7 +100,8 @@
             }
             
             @media #{$desktop} {
-                margin: 10px 0;
+//                margin: 10px 0;
+//                margin-right: 120px;
             }
         
         &--circle {

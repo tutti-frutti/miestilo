@@ -7,23 +7,27 @@
     &__top-title {
         padding-top: 66px;
         margin-bottom: 14px;
+        
+        @media #{$tablet} {
+            padding-top: 30px;
+        }
     }
     
     &__general {
-        margin-top: 55px;
+        margin-top: 33px;
         padding: 0;
         text-align: center;
     }
     
     &--left {
         float: left;
-        margin-top: 105px;
-        margin-left: 120px;
+        margin-top: 70px;
+        margin-left: 126px;
         max-width: 380px;
         
         
         
-        @media #{$desktop} {
+        @media #{$desktop-sm} {
             margin-left: 60px;
         }
         
@@ -37,14 +41,14 @@
     
     &--right {
         float: right;
-        margin-top: 108px;
-        margin-right: 43px;
+        margin-top: 72px;
+        margin-right: 39px;
         max-width: 510px;
         
         @media #{$tablet} {
             float: none;
-            margin-left: 10px;
-            margin-right: 10px;
+            margin: 0 auto;
+            margin-top: 50px;
         }
     }
     
@@ -66,7 +70,7 @@
     &__items {
         position: relative;
         display: inline-block;
-        width: 205px;
+        width: 190px;
         padding-top: 80px;
         margin-right: 30px;
         font-size: 14px;

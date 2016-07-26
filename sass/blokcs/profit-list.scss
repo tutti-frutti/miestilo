@@ -1,10 +1,14 @@
 .profit-list {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     margin-top: 65px;
     margin-bottom: 50px;
     text-align: center;
     padding: 0;
+    
+    @media  #{$tablet} {
+        margin-bottom: 10px;
+    }
     
     &__item {
         position: relative;
@@ -25,7 +29,7 @@
         }
         
         &--bag {
-            margin-left: 19px;
+            margin-left: 64px;
             margin-right: 47px;
             
             @media #{$tablet} {
