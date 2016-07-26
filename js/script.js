@@ -5,12 +5,19 @@ $('.main-nav__toogle').click(function(){
 });
 
 $(document).ready(function() {
-		$(".fancybox").fancybox();
+		$(".fancybox")
+            .attr('rel', 'gallery')
+            .fancybox({
+                padding : 0
+        });
 	});
 
 $(document).ready(function() {
-	$(".fancybox").fancybox({
-		openEffect	: 'fade',
-		closeEffect	: 'none'
+	$('.fancybox-media').fancybox({
+		openEffect  : 'none',
+		closeEffect : 'none',
+		helpers : {
+			media : {}
+		}
 	});
 });
