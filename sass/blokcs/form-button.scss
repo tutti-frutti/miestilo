@@ -17,6 +17,16 @@
         
         @media #{$tablet} {
             width: 255px;
+            text-align: center;
+            padding: 0;
+            font-size: 16px;
+        }
+        
+        @media #{$mobile} {
+            width: 210px;
+            text-align: center;
+            padding: 0;
+            font-size: 14px;
         }
     }
 }

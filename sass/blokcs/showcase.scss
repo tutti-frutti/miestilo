@@ -6,6 +6,10 @@
     box-sizing: border-box;
     background: #fff;
     
+    @media #{$mobile} {
+        padding: 30px 20px 0px 20px;
+    }
+    
     @media #{$tablet} {
             float: none;
             margin: 0 auto;
