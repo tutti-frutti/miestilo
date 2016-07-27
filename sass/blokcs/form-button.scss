@@ -1,6 +1,5 @@
 .form-button {
     margin: 0 auto;
-    
     text-align: center;
     
     &__btn-input {
@@ -14,6 +13,7 @@
         font-size: 16px;
         color: #fff;
         background: #8d2275;
+        text-decoration: none;
         
         @media #{$tablet} {
             width: 255px;
@@ -29,4 +29,12 @@
             font-size: 14px;
         }
     }
+}
+
+.link-form {
+	padding-top: 17px;
+}
+
+.link-form2 {
+    padding: 16px 70px;
 }

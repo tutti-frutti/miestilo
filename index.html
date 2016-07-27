@@ -21,7 +21,7 @@
 
     <ul class="header__contacts">
         <li class="header__contacts-delivery">Бесплатно по России</li>
-        <li class="header__contacts-phone"><a href="tel:8 800 500-70-61">8 800 500-70-61</a></li>
+        <li class="header__contacts-phone"><a href="#">8 800 500-70-61</a></li>
         <li class="header__contacts-hours">с 10:00 до 21:00 по Москве</li>
     </ul>
 
@@ -110,18 +110,18 @@
 
                     <div class="form-connect__fio">
                         <label for="fio">Введите Ваше имя</label>
-                        <input class="form-connect__text-inputs" type="text" name="fio" id="fio" placeholder="Иванов Иван Иванович">
+                        <input class="form-connect__text-inputs" type="text" name="names" id="fio" placeholder="Иванов Иван Иванович">
                     </div>
 
                     <div class="form-connect__tel-inputs-wrapper clearfix">
                         <label for="phone-number">Введите Ваш телефон</label>
-                        <input class="form-connect__tel-inputs  form-connect__tel-inputs--small" type="tel" name="" id="phone-number" placeholder="+7">
-                        <input class="form-connect__tel-inputs  form-connect__tel-inputs--medium" type="tel" name="" id="phone-number" placeholder="123">
-                        <input class="form-connect__tel-inputs  form-connect__tel-inputs--large" type="tel" name="" id="phone-number" placeholder="4567890">
+                        <input class="form-connect__tel-inputs  form-connect__tel-inputs--small" type="tel"  placeholder="+7">
+                        <input class="form-connect__tel-inputs  form-connect__tel-inputs--medium" type="tel"  placeholder="123">
+                        <input class="form-connect__tel-inputs  form-connect__tel-inputs--large" type="tel" placeholder="4567890">
                     </div>
 
                     <div class="form-connect__text-inputs-wrapper">
-                        <input class="form-connect__text-inputs" type="text" name="" id="city" placeholder="Ваш город">
+                        <input class="form-connect__text-inputs" type="text" name="town" id="city" placeholder="Ваш город">
                     </div>
 
                     <div class="form-connect__mail-inputs-wrapper">
@@ -144,7 +144,7 @@
 
                     <div class="form-connect__fio">
                         <label for="fio">Введите Ваше имя</label>
-                        <input class="form-connect__text-inputs" type="text" name="fio" id="fio" placeholder="Иванов Иван Иванович">
+                        <input class="form-connect__text-inputs" type="text" name="names" id="fio" placeholder="Иванов Иван Иванович">
                     </div>
 
                     <div class="form-connect__tel-inputs-wrapper clearfix">
@@ -205,6 +205,8 @@
     </ul>
 
     <div class="ytube"><a class="fancybox-media" href="https://www.youtube.com/watch?v=doJF8S-UqW8"><img class="ytube--max-width" src="/img/icon-ytube.png" alt="Видео на youtube"></a></div>
+    
+<!--    <div class="ytube"><a class="fancybox-media" href="https://www.youtube.com/watch?v=doJF8S-UqW8"><div class="ytube"><iframe width="560" height="315" src="https://www.youtube.com/embed/doJF8S-UqW8" frameborder="0" allowfullscreen></iframe></div></a></div>-->
 
     <div class="bijouterie">
         <div class="bijouterie__wrapper">
@@ -406,26 +408,15 @@
                     <p class="customers__text  customers__items--custom-size-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span class="customers__name">Антон Малененко</span></p>
                 </div>
         </ul>
-
-        <!--
-        <ul class="customers__list">
-            <li class="customers__items"><img src="/img/customers-1.png" alt="Наши клиенты"></li>
-            <li class="customers__items  customers__items--custom-size-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span class="customers__name">Антон Малененко</span></li>
-            <li class="customers__items customers__items--custom-size-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <span class="customers__name">Антон Малененко</span></li>
-            <li class="customers__items  customers__items--positioning"><img src="/img/customers-2.png" alt="Наши клиенты"></li>
-            <li class="customers__items"><img src="/img/customers-3.png" alt="Наши клиенты"></li>
-            <li class="customers__items  customers__items--custom-size-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia<span class="customers__name">Антон Малененко</span></li>
-        </ul>
--->
     </div>
 
     <!--стили в sections-block-->
     <h2 class="sub-title"> 
                     и ещё более <strong>500 довольных клиентов</strong>
                 </h2>
-
-    <div class="form-button">
-        <input class="form-button__btn-input" type="submit" value="Стать партнером">
+    <!--стили в form-button-->
+    <div class="form-button link-form">
+        <a href="#" class="form-button__btn-input link-form2">Стать партнером</a>
     </div>
 
     <div class="work-with">
